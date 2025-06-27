@@ -1,0 +1,1161 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/university#"
+     xml:base="http://www.semanticweb.org/university"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/university"/>
+    
+    <!-- Classes -->
+    <owl:Class rdf:about="#University"/>
+    <owl:Class rdf:about="#Student"/>
+    <owl:Class rdf:about="#Professor"/>
+    <owl:Class rdf:about="#Course"/>
+    <owl:Class rdf:about="#Department"/>
+    <owl:Class rdf:about="#Faculty"/>
+    <owl:Class rdf:about="#ResearchProject"/>
+    <owl:Class rdf:about="#Publication"/>
+    <owl:Class rdf:about="#Degree"/>
+    <owl:Class rdf:about="#Semester"/>
+    <owl:Class rdf:about="#Building"/>
+    <owl:Class rdf:about="#Library"/>
+    <owl:Class rdf:about="#Laboratory"/>
+    <owl:Class rdf:about="#Classroom"/>
+    <owl:Class rdf:about="#Office"/>
+    <owl:Class rdf:about="#Conference"/>
+    <owl:Class rdf:about="#Workshop"/>
+    <owl:Class rdf:about="#Thesis"/>
+    <owl:Class rdf:about="#Grant"/>
+    <owl:Class rdf:about="#Award"/>
+    
+    <!-- Object Properties -->
+    <owl:ObjectProperty rdf:about="#enrolledIn">
+        <rdfs:domain rdf:resource="#Student"/>
+        <rdfs:range rdf:resource="#Course"/>
+        <rdfs:label>enrolled in</rdfs:label>
+    </owl:ObjectProperty>
+    
+    <owl:ObjectProperty rdf:about="#teaches">
+        <rdfs:domain rdf:resource="#Professor"/>
+        <rdfs:range rdf:resource="#Course"/>
+        <rdfs:label>teaches</rdfs:label>
+    </owl:ObjectProperty>
+    
+    <owl:ObjectProperty rdf:about="#belongsTo">
+        <rdfs:domain rdf:resource="#Student"/>
+        <rdfs:range rdf:resource="#Department"/>
+        <rdfs:label>belongs to</rdfs:label>
+    </owl:ObjectProperty>
+    
+    <owl:ObjectProperty rdf:about="#worksIn">
+        <rdfs:domain rdf:resource="#Professor"/>
+        <rdfs:range rdf:resource="#Department"/>
+        <rdfs:label>works in</rdfs:label>
+    </owl:ObjectProperty>
+    
+    <owl:ObjectProperty rdf:about="#offeredBy">
+        <rdfs:domain rdf:resource="#Course"/>
+        <rdfs:range rdf:resource="#Department"/>
+        <rdfs:label>offered by</rdfs:label>
+    </owl:ObjectProperty>
+    
+    <owl:ObjectProperty rdf:about="#leads">
+        <rdfs:domain rdf:resource="#Professor"/>
+        <rdfs:range rdf:resource="#ResearchProject"/>
+        <rdfs:label>leads</rdfs:label>
+    </owl:ObjectProperty>
+    
+    <owl:ObjectProperty rdf:about="#participatesIn">
+        <rdfs:domain rdf:resource="#Student"/>
+        <rdfs:range rdf:resource="#ResearchProject"/>
+        <rdfs:label>participates in</rdfs:label>
+    </owl:ObjectProperty>
+    
+    <owl:ObjectProperty rdf:about="#publishes">
+        <rdfs:domain rdf:resource="#Professor"/>
+        <rdfs:range rdf:resource="#Publication"/>
+        <rdfs:label>publishes</rdfs:label>
+    </owl:ObjectProperty>
+    
+    <owl:ObjectProperty rdf:about="#pursues">
+        <rdfs:domain rdf:resource="#Student"/>
+        <rdfs:range rdf:resource="#Degree"/>
+        <rdfs:label>pursues</rdfs:label>
+    </owl:ObjectProperty>
+    
+    <owl:ObjectProperty rdf:about="#offeredIn">
+        <rdfs:domain rdf:resource="#Course"/>
+        <rdfs:range rdf:resource="#Semester"/>
+        <rdfs:label>offered in</rdfs:label>
+    </owl:ObjectProperty>
+    
+    <owl:ObjectProperty rdf:about="#locatedIn">
+        <rdfs:domain rdf:resource="#Department"/>
+        <rdfs:range rdf:resource="#Building"/>
+        <rdfs:label>located in</rdfs:label>
+    </owl:ObjectProperty>
+    
+    <owl:ObjectProperty rdf:about="#hasOffice">
+        <rdfs:domain rdf:resource="#Professor"/>
+        <rdfs:range rdf:resource="#Office"/>
+        <rdfs:label>has office</rdfs:label>
+    </owl:ObjectProperty>
+    
+    <owl:ObjectProperty rdf:about="#conductedIn">
+        <rdfs:domain rdf:resource="#Course"/>
+        <rdfs:range rdf:resource="#Classroom"/>
+        <rdfs:label>conducted in</rdfs:label>
+    </owl:ObjectProperty>
+    
+    <owl:ObjectProperty rdf:about="#fundedBy">
+        <rdfs:domain rdf:resource="#ResearchProject"/>
+        <rdfs:range rdf:resource="#Grant"/>
+        <rdfs:label>funded by</rdfs:label>
+    </owl:ObjectProperty>
+    
+    <owl:ObjectProperty rdf:about="#receives">
+        <rdfs:domain rdf:resource="#Professor"/>
+        <rdfs:range rdf:resource="#Award"/>
+        <rdfs:label>receives</rdfs:label>
+    </owl:ObjectProperty>
+    
+    <owl:ObjectProperty rdf:about="#supervises">
+        <rdfs:domain rdf:resource="#Professor"/>
+        <rdfs:range rdf:resource="#Student"/>
+        <rdfs:label>supervises</rdfs:label>
+    </owl:ObjectProperty>
+    
+    <!-- Data Properties -->
+    <owl:DatatypeProperty rdf:about="#hasName">
+        <rdfs:domain rdf:resource="#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+    <owl:DatatypeProperty rdf:about="#hasEmail">
+        <rdfs:domain rdf:resource="#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has email</rdfs:label>
+    </owl:DatatypeProperty>
+    
+    <owl:DatatypeProperty rdf:about="#hasStudentID">
+        <rdfs:domain rdf:resource="#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has student ID</rdfs:label>
+    </owl:DatatypeProperty>
+    
+    <owl:DatatypeProperty rdf:about="#hasGPA">
+        <rdfs:domain rdf:resource="#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:label>has GPA</rdfs:label>
+    </owl:DatatypeProperty>
+    
+    <owl:DatatypeProperty rdf:about="#hasTitle">
+        <rdfs:domain rdf:resource="#Course"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has title</rdfs:label>
+    </owl:DatatypeProperty>
+    
+    <owl:DatatypeProperty rdf:about="#hasCredits">
+        <rdfs:domain rdf:resource="#Course"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>has credits</rdfs:label>
+    </owl:DatatypeProperty>
+    
+    <owl:DatatypeProperty rdf:about="#hasCode">
+        <rdfs:domain rdf:resource="#Course"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has code</rdfs:label>
+    </owl:DatatypeProperty>
+    
+    <owl:DatatypeProperty rdf:about="#hasCapacity">
+        <rdfs:domain rdf:resource="#Classroom"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>has capacity</rdfs:label>
+    </owl:DatatypeProperty>
+    
+    <owl:DatatypeProperty rdf:about="#hasFloor">
+        <rdfs:domain rdf:resource="#Office"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>has floor</rdfs:label>
+    </owl:DatatypeProperty>
+    
+    <owl:DatatypeProperty rdf:about="#hasAmount">
+        <rdfs:domain rdf:resource="#Grant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:label>has amount</rdfs:label>
+    </owl:DatatypeProperty>
+    
+    <!-- Students -->
+    <Student rdf:about="#JohnDoe">
+        <hasName>John Doe</hasName>
+        <hasEmail>john.doe@university.edu</hasEmail>
+        <hasStudentID>2023001</hasStudentID>
+        <hasGPA rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.8</hasGPA>
+        <belongsTo rdf:resource="#ComputerScienceDepartment"/>
+        <pursues rdf:resource="#BachelorOfScience"/>
+        <enrolledIn rdf:resource="#CS101"/>
+        <enrolledIn rdf:resource="#MATH201"/>
+        <enrolledIn rdf:resource="#CS201"/>
+    </Student>
+    
+    <Student rdf:about="#JaneSmith">
+        <hasName>Jane Smith</hasName>
+        <hasEmail>jane.smith@university.edu</hasEmail>
+        <hasStudentID>2023002</hasStudentID>
+        <hasGPA rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.9</hasGPA>
+        <belongsTo rdf:resource="#ComputerScienceDepartment"/>
+        <pursues rdf:resource="#BachelorOfScience"/>
+        <enrolledIn rdf:resource="#CS101"/>
+        <enrolledIn rdf:resource="#PHYS101"/>
+        <enrolledIn rdf:resource="#CS301"/>
+    </Student>
+    
+    <Student rdf:about="#MikeJohnson">
+        <hasName>Mike Johnson</hasName>
+        <hasEmail>mike.johnson@university.edu</hasEmail>
+        <hasStudentID>2023003</hasStudentID>
+        <hasGPA rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</hasGPA>
+        <belongsTo rdf:resource="#MathematicsDepartment"/>
+        <pursues rdf:resource="#BachelorOfArts"/>
+        <enrolledIn rdf:resource="#MATH201"/>
+        <enrolledIn rdf:resource="#MATH301"/>
+        <enrolledIn rdf:resource="#MATH401"/>
+    </Student>
+    
+    <Student rdf:about="#SarahWilson">
+        <hasName>Sarah Wilson</hasName>
+        <hasEmail>sarah.wilson@university.edu</hasEmail>
+        <hasStudentID>2023004</hasStudentID>
+        <hasGPA rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.7</hasGPA>
+        <belongsTo rdf:resource="#PhysicsDepartment"/>
+        <pursues rdf:resource="#BachelorOfScience"/>
+        <enrolledIn rdf:resource="#PHYS101"/>
+        <enrolledIn rdf:resource="#PHYS201"/>
+        <enrolledIn rdf:resource="#MATH201"/>
+    </Student>
+    
+    <Student rdf:about="#DavidBrown">
+        <hasName>David Brown</hasName>
+        <hasEmail>david.brown@university.edu</hasEmail>
+        <hasStudentID>2023005</hasStudentID>
+        <hasGPA rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.6</hasGPA>
+        <belongsTo rdf:resource="#ComputerScienceDepartment"/>
+        <pursues rdf:resource="#BachelorOfScience"/>
+        <enrolledIn rdf:resource="#CS101"/>
+        <enrolledIn rdf:resource="#CS201"/>
+        <enrolledIn rdf:resource="#CS401"/>
+    </Student>
+    
+    <Student rdf:about="#EmilyDavis">
+        <hasName>Emily Davis</hasName>
+        <hasEmail>emily.davis@university.edu</hasEmail>
+        <hasStudentID>2023006</hasStudentID>
+        <hasGPA rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.4</hasGPA>
+        <belongsTo rdf:resource="#MathematicsDepartment"/>
+        <pursues rdf:resource="#BachelorOfArts"/>
+        <enrolledIn rdf:resource="#MATH201"/>
+        <enrolledIn rdf:resource="#MATH301"/>
+        <enrolledIn rdf:resource="#STAT301"/>
+    </Student>
+    
+    <Student rdf:about="#AlexChen">
+        <hasName>Alex Chen</hasName>
+        <hasEmail>alex.chen@university.edu</hasEmail>
+        <hasStudentID>2023007</hasStudentID>
+        <hasGPA rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.9</hasGPA>
+        <belongsTo rdf:resource="#PhysicsDepartment"/>
+        <pursues rdf:resource="#BachelorOfScience"/>
+        <enrolledIn rdf:resource="#PHYS101"/>
+        <enrolledIn rdf:resource="#PHYS201"/>
+        <enrolledIn rdf:resource="#PHYS301"/>
+    </Student>
+    
+    <Student rdf:about="#LisaGarcia">
+        <hasName>Lisa Garcia</hasName>
+        <hasEmail>lisa.garcia@university.edu</hasEmail>
+        <hasStudentID>2023008</hasStudentID>
+        <hasGPA rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.8</hasGPA>
+        <belongsTo rdf:resource="#ComputerScienceDepartment"/>
+        <pursues rdf:resource="#BachelorOfScience"/>
+        <enrolledIn rdf:resource="#CS101"/>
+        <enrolledIn rdf:resource="#CS201"/>
+        <enrolledIn rdf:resource="#CS302"/>
+    </Student>
+    
+    <Student rdf:about="#AliceSmith">
+        <hasName>Alice Smith</hasName>
+        <hasEmail>alice.smith@university.edu</hasEmail>
+        <hasStudentID>2023009</hasStudentID>
+        <hasGPA rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.7</hasGPA>
+        <belongsTo rdf:resource="#ComputerScienceDepartment"/>
+        <pursues rdf:resource="#BachelorOfScience"/>
+        <enrolledIn rdf:resource="#CS101"/>
+        <enrolledIn rdf:resource="#CS201"/>
+    </Student>
+    
+    <!-- Professors -->
+    <Professor rdf:about="#DrAnderson">
+        <hasName>Dr. Sarah Anderson</hasName>
+        <hasEmail>sarah.anderson@university.edu</hasEmail>
+        <worksIn rdf:resource="#ComputerScienceDepartment"/>
+        <teaches rdf:resource="#CS101"/>
+        <teaches rdf:resource="#CS201"/>
+        <leads rdf:resource="#AIResearchProject"/>
+        <publishes rdf:resource="#MachineLearningPaper"/>
+        <hasOffice rdf:resource="#Office301"/>
+        <receives rdf:resource="#ExcellenceAward"/>
+        <supervises rdf:resource="#JohnDoe"/>
+    </Professor>
+    
+    <Professor rdf:about="#DrBrown">
+        <hasName>Dr. Robert Brown</hasName>
+        <hasEmail>robert.brown@university.edu</hasEmail>
+        <worksIn rdf:resource="#MathematicsDepartment"/>
+        <teaches rdf:resource="#MATH201"/>
+        <teaches rdf:resource="#MATH301"/>
+        <leads rdf:resource="#NumberTheoryProject"/>
+        <publishes rdf:resource="#NumberTheoryPaper"/>
+        <hasOffice rdf:resource="#Office205"/>
+        <supervises rdf:resource="#MikeJohnson"/>
+    </Professor>
+    
+    <Professor rdf:about="#DrWilson">
+        <hasName>Dr. Emily Wilson</hasName>
+        <hasEmail>emily.wilson@university.edu</hasEmail>
+        <worksIn rdf:resource="#PhysicsDepartment"/>
+        <teaches rdf:resource="#PHYS101"/>
+        <teaches rdf:resource="#PHYS201"/>
+        <leads rdf:resource="#QuantumPhysicsProject"/>
+        <publishes rdf:resource="#QuantumPhysicsPaper"/>
+        <hasOffice rdf:resource="#Office401"/>
+        <receives rdf:resource="#ResearchAward"/>
+        <supervises rdf:resource="#SarahWilson"/>
+    </Professor>
+    
+    <Professor rdf:about="#DrMartinez">
+        <hasName>Dr. Carlos Martinez</hasName>
+        <hasEmail>carlos.martinez@university.edu</hasEmail>
+        <worksIn rdf:resource="#ComputerScienceDepartment"/>
+        <teaches rdf:resource="#CS301"/>
+        <teaches rdf:resource="#CS401"/>
+        <leads rdf:resource="#CybersecurityProject"/>
+        <publishes rdf:resource="#CybersecurityPaper"/>
+        <hasOffice rdf:resource="#Office302"/>
+        <supervises rdf:resource="#JaneSmith"/>
+    </Professor>
+    
+    <Professor rdf:about="#DrKim">
+        <hasName>Dr. Jennifer Kim</hasName>
+        <hasEmail>jennifer.kim@university.edu</hasEmail>
+        <worksIn rdf:resource="#MathematicsDepartment"/>
+        <teaches rdf:resource="#STAT301"/>
+        <teaches rdf:resource="#MATH401"/>
+        <leads rdf:resource="#StatisticsProject"/>
+        <publishes rdf:resource="#StatisticsPaper"/>
+        <hasOffice rdf:resource="#Office206"/>
+        <supervises rdf:resource="#EmilyDavis"/>
+    </Professor>
+    
+    <Professor rdf:about="#DrThompson">
+        <hasName>Dr. Michael Thompson</hasName>
+        <hasEmail>michael.thompson@university.edu</hasEmail>
+        <worksIn rdf:resource="#PhysicsDepartment"/>
+        <teaches rdf:resource="#PHYS301"/>
+        <teaches rdf:resource="#PHYS401"/>
+        <leads rdf:resource="#AstrophysicsProject"/>
+        <publishes rdf:resource="#AstrophysicsPaper"/>
+        <hasOffice rdf:resource="#Office402"/>
+        <supervises rdf:resource="#AlexChen"/>
+    </Professor>
+    
+    <!-- Additional Professors -->
+    <Professor rdf:about="#DrAliceWong">
+        <hasName>Dr. Alice Wong</hasName>
+        <hasEmail>alice.wong@university.edu</hasEmail>
+        <worksIn rdf:resource="#ComputerScienceDepartment"/>
+        <teaches rdf:resource="#CS101"/>
+        <hasOffice rdf:resource="#Office303"/>
+    </Professor>
+    <Professor rdf:about="#DrBobSmith">
+        <hasName>Dr. Bob Smith</hasName>
+        <hasEmail>bob.smith@university.edu</hasEmail>
+        <worksIn rdf:resource="#MathematicsDepartment"/>
+        <teaches rdf:resource="#MATH201"/>
+        <hasOffice rdf:resource="#Office205"/>
+    </Professor>
+    <Professor rdf:about="#DrCarolLee">
+        <hasName>Dr. Carol Lee</hasName>
+        <hasEmail>carol.lee@university.edu</hasEmail>
+        <worksIn rdf:resource="#PhysicsDepartment"/>
+        <teaches rdf:resource="#PHYS101"/>
+        <hasOffice rdf:resource="#Office401"/>
+    </Professor>
+    <Professor rdf:about="#DrDavidPatel">
+        <hasName>Dr. David Patel</hasName>
+        <hasEmail>david.patel@university.edu</hasEmail>
+        <worksIn rdf:resource="#EngineeringDepartment"/>
+        <teaches rdf:resource="#ENG101"/>
+        <hasOffice rdf:resource="#Office501"/>
+    </Professor>
+    <Professor rdf:about="#DrEvaNguyen">
+        <hasName>Dr. Eva Nguyen</hasName>
+        <hasEmail>eva.nguyen@university.edu</hasEmail>
+        <worksIn rdf:resource="#BiologyDepartment"/>
+        <teaches rdf:resource="#BIO101"/>
+        <hasOffice rdf:resource="#Office601"/>
+    </Professor>
+    <Professor rdf:about="#DrFrankKim">
+        <hasName>Dr. Frank Kim</hasName>
+        <hasEmail>frank.kim@university.edu</hasEmail>
+        <worksIn rdf:resource="#ChemistryDepartment"/>
+        <teaches rdf:resource="#CHEM101"/>
+        <hasOffice rdf:resource="#Office701"/>
+    </Professor>
+    <Professor rdf:about="#DrGraceBrown">
+        <hasName>Dr. Grace Brown</hasName>
+        <hasEmail>grace.brown@university.edu</hasEmail>
+        <worksIn rdf:resource="#ComputerScienceDepartment"/>
+        <teaches rdf:resource="#CS201"/>
+        <hasOffice rdf:resource="#Office304"/>
+    </Professor>
+    <Professor rdf:about="#DrHenryGarcia">
+        <hasName>Dr. Henry Garcia</hasName>
+        <hasEmail>henry.garcia@university.edu</hasEmail>
+        <worksIn rdf:resource="#MathematicsDepartment"/>
+        <teaches rdf:resource="#MATH301"/>
+        <hasOffice rdf:resource="#Office206"/>
+    </Professor>
+    <Professor rdf:about="#DrIreneChen">
+        <hasName>Dr. Irene Chen</hasName>
+        <hasEmail>irene.chen@university.edu</hasEmail>
+        <worksIn rdf:resource="#PhysicsDepartment"/>
+        <teaches rdf:resource="#PHYS201"/>
+        <hasOffice rdf:resource="#Office402"/>
+    </Professor>
+    <Professor rdf:about="#DrJackLee">
+        <hasName>Dr. Jack Lee</hasName>
+        <hasEmail>jack.lee@university.edu</hasEmail>
+        <worksIn rdf:resource="#EngineeringDepartment"/>
+        <teaches rdf:resource="#ENG201"/>
+        <hasOffice rdf:resource="#Office502"/>
+    </Professor>
+    <Professor rdf:about="#DrKarenSmith">
+        <hasName>Dr. Karen Smith</hasName>
+        <hasEmail>karen.smith@university.edu</hasEmail>
+        <worksIn rdf:resource="#BiologyDepartment"/>
+        <teaches rdf:resource="#BIO201"/>
+        <hasOffice rdf:resource="#Office602"/>
+    </Professor>
+    <Professor rdf:about="#DrLeoTurner">
+        <hasName>Dr. Leo Turner</hasName>
+        <hasEmail>leo.turner@university.edu</hasEmail>
+        <worksIn rdf:resource="#ChemistryDepartment"/>
+        <teaches rdf:resource="#CHEM201"/>
+        <hasOffice rdf:resource="#Office702"/>
+    </Professor>
+    <Professor rdf:about="#DrMonaClark">
+        <hasName>Dr. Mona Clark</hasName>
+        <hasEmail>mona.clark@university.edu</hasEmail>
+        <worksIn rdf:resource="#ComputerScienceDepartment"/>
+        <teaches rdf:resource="#CS301"/>
+        <hasOffice rdf:resource="#Office305"/>
+    </Professor>
+    <Professor rdf:about="#DrNathanScott">
+        <hasName>Dr. Nathan Scott</hasName>
+        <hasEmail>nathan.scott@university.edu</hasEmail>
+        <worksIn rdf:resource="#MathematicsDepartment"/>
+        <teaches rdf:resource="#MATH401"/>
+        <hasOffice rdf:resource="#Office207"/>
+    </Professor>
+    <Professor rdf:about="#DrOliviaBaker">
+        <hasName>Dr. Olivia Baker</hasName>
+        <hasEmail>olivia.baker@university.edu</hasEmail>
+        <worksIn rdf:resource="#PhysicsDepartment"/>
+        <teaches rdf:resource="#PHYS301"/>
+        <hasOffice rdf:resource="#Office403"/>
+    </Professor>
+    <Professor rdf:about="#DrPaulYoung">
+        <hasName>Dr. Paul Young</hasName>
+        <hasEmail>paul.young@university.edu</hasEmail>
+        <worksIn rdf:resource="#EngineeringDepartment"/>
+        <teaches rdf:resource="#ENG301"/>
+        <hasOffice rdf:resource="#Office503"/>
+    </Professor>
+    <Professor rdf:about="#DrQuinnEvans">
+        <hasName>Dr. Quinn Evans</hasName>
+        <hasEmail>quinn.evans@university.edu</hasEmail>
+        <worksIn rdf:resource="#BiologyDepartment"/>
+        <teaches rdf:resource="#BIO301"/>
+        <hasOffice rdf:resource="#Office603"/>
+    </Professor>
+    <Professor rdf:about="#DrRachelKing">
+        <hasName>Dr. Rachel King</hasName>
+        <hasEmail>rachel.king@university.edu</hasEmail>
+        <worksIn rdf:resource="#ChemistryDepartment"/>
+        <teaches rdf:resource="#CHEM301"/>
+        <hasOffice rdf:resource="#Office703"/>
+    </Professor>
+    <Professor rdf:about="#DrSamuelHill">
+        <hasName>Dr. Samuel Hill</hasName>
+        <hasEmail>samuel.hill@university.edu</hasEmail>
+        <worksIn rdf:resource="#EngineeringDepartment"/>
+        <teaches rdf:resource="#ENG401"/>
+        <hasOffice rdf:resource="#Office504"/>
+    </Professor>
+    <!-- End of additional professors -->
+    
+    <!-- Courses -->
+    <Course rdf:about="#CS101">
+        <hasTitle>Introduction to Computer Science</hasTitle>
+        <hasCode>CS101</hasCode>
+        <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasCredits>
+        <offeredBy rdf:resource="#ComputerScienceDepartment"/>
+        <offeredIn rdf:resource="#Fall2023"/>
+        <conductedIn rdf:resource="#Classroom101"/>
+    </Course>
+    
+    <Course rdf:about="#CS201">
+        <hasTitle>Data Structures and Algorithms</hasTitle>
+        <hasCode>CS201</hasCode>
+        <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasCredits>
+        <offeredBy rdf:resource="#ComputerScienceDepartment"/>
+        <offeredIn rdf:resource="#Spring2024"/>
+        <conductedIn rdf:resource="#Classroom102"/>
+    </Course>
+    
+    <Course rdf:about="#CS301">
+        <hasTitle>Database Systems</hasTitle>
+        <hasCode>CS301</hasCode>
+        <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasCredits>
+        <offeredBy rdf:resource="#ComputerScienceDepartment"/>
+        <offeredIn rdf:resource="#Fall2023"/>
+        <conductedIn rdf:resource="#Classroom103"/>
+    </Course>
+    
+    <Course rdf:about="#CS302">
+        <hasTitle>Software Engineering</hasTitle>
+        <hasCode>CS302</hasCode>
+        <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasCredits>
+        <offeredBy rdf:resource="#ComputerScienceDepartment"/>
+        <offeredIn rdf:resource="#Spring2024"/>
+        <conductedIn rdf:resource="#Classroom104"/>
+    </Course>
+    
+    <Course rdf:about="#CS401">
+        <hasTitle>Artificial Intelligence</hasTitle>
+        <hasCode>CS401</hasCode>
+        <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasCredits>
+        <offeredBy rdf:resource="#ComputerScienceDepartment"/>
+        <offeredIn rdf:resource="#Fall2023"/>
+        <conductedIn rdf:resource="#Classroom105"/>
+    </Course>
+    
+    <Course rdf:about="#MATH201">
+        <hasTitle>Calculus II</hasTitle>
+        <hasCode>MATH201</hasCode>
+        <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasCredits>
+        <offeredBy rdf:resource="#MathematicsDepartment"/>
+        <offeredIn rdf:resource="#Fall2023"/>
+        <conductedIn rdf:resource="#Classroom201"/>
+    </Course>
+    
+    <Course rdf:about="#MATH301">
+        <hasTitle>Linear Algebra</hasTitle>
+        <hasCode>MATH301</hasCode>
+        <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasCredits>
+        <offeredBy rdf:resource="#MathematicsDepartment"/>
+        <offeredIn rdf:resource="#Spring2024"/>
+        <conductedIn rdf:resource="#Classroom202"/>
+    </Course>
+    
+    <Course rdf:about="#MATH401">
+        <hasTitle>Advanced Calculus</hasTitle>
+        <hasCode>MATH401</hasCode>
+        <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasCredits>
+        <offeredBy rdf:resource="#MathematicsDepartment"/>
+        <offeredIn rdf:resource="#Fall2023"/>
+        <conductedIn rdf:resource="#Classroom203"/>
+    </Course>
+    
+    <Course rdf:about="#STAT301">
+        <hasTitle>Probability and Statistics</hasTitle>
+        <hasCode>STAT301</hasCode>
+        <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasCredits>
+        <offeredBy rdf:resource="#MathematicsDepartment"/>
+        <offeredIn rdf:resource="#Spring2024"/>
+        <conductedIn rdf:resource="#Classroom204"/>
+    </Course>
+    
+    <Course rdf:about="#PHYS101">
+        <hasTitle>Introduction to Physics</hasTitle>
+        <hasCode>PHYS101</hasCode>
+        <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasCredits>
+        <offeredBy rdf:resource="#PhysicsDepartment"/>
+        <offeredIn rdf:resource="#Fall2023"/>
+        <conductedIn rdf:resource="#Classroom301"/>
+    </Course>
+    
+    <Course rdf:about="#PHYS201">
+        <hasTitle>Classical Mechanics</hasTitle>
+        <hasCode>PHYS201</hasCode>
+        <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasCredits>
+        <offeredBy rdf:resource="#PhysicsDepartment"/>
+        <offeredIn rdf:resource="#Spring2024"/>
+        <conductedIn rdf:resource="#Classroom302"/>
+    </Course>
+    
+    <Course rdf:about="#PHYS301">
+        <hasTitle>Quantum Mechanics</hasTitle>
+        <hasCode>PHYS301</hasCode>
+        <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasCredits>
+        <offeredBy rdf:resource="#PhysicsDepartment"/>
+        <offeredIn rdf:resource="#Fall2023"/>
+        <conductedIn rdf:resource="#Classroom303"/>
+    </Course>
+    
+    <Course rdf:about="#PHYS401">
+        <hasTitle>Astrophysics</hasTitle>
+        <hasCode>PHYS401</hasCode>
+        <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasCredits>
+        <offeredBy rdf:resource="#PhysicsDepartment"/>
+        <offeredIn rdf:resource="#Spring2024"/>
+        <conductedIn rdf:resource="#Classroom304"/>
+    </Course>
+    
+    <!-- Departments -->
+    <Department rdf:about="#ComputerScienceDepartment">
+        <hasName>Computer Science Department</hasName>
+        <locatedIn rdf:resource="#EngineeringBuilding"/>
+    </Department>
+    
+    <Department rdf:about="#MathematicsDepartment">
+        <hasName>Mathematics Department</hasName>
+        <locatedIn rdf:resource="#ScienceBuilding"/>
+    </Department>
+    
+    <Department rdf:about="#PhysicsDepartment">
+        <hasName>Physics Department</hasName>
+        <locatedIn rdf:resource="#ScienceBuilding"/>
+    </Department>
+    
+    <Department rdf:about="#EngineeringDepartment">
+        <hasName>Engineering Department</hasName>
+    </Department>
+    
+    <Department rdf:about="#BiologyDepartment">
+        <hasName>Biology Department</hasName>
+    </Department>
+    
+    <Department rdf:about="#ChemistryDepartment">
+        <hasName>Chemistry Department</hasName>
+    </Department>
+    
+    <!-- Buildings -->
+    <Building rdf:about="#EngineeringBuilding">
+        <hasName>Engineering Building</hasName>
+    </Building>
+    
+    <Building rdf:about="#ScienceBuilding">
+        <hasName>Science Building</hasName>
+    </Building>
+    
+    <Building rdf:about="#LibraryBuilding">
+        <hasName>University Library</hasName>
+    </Building>
+    
+    <Building rdf:about="#StudentCenter">
+        <hasName>Student Center</hasName>
+    </Building>
+    
+    <Building rdf:about="#ResearchCenter">
+        <hasName>Research Center</hasName>
+    </Building>
+    
+    <!-- Classrooms -->
+    <Classroom rdf:about="#Classroom101">
+        <hasName>Room 101</hasName>
+        <hasCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</hasCapacity>
+    </Classroom>
+    
+    <Classroom rdf:about="#Classroom102">
+        <hasName>Room 102</hasName>
+        <hasCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</hasCapacity>
+    </Classroom>
+    
+    <Classroom rdf:about="#Classroom103">
+        <hasName>Room 103</hasName>
+        <hasCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35</hasCapacity>
+    </Classroom>
+    
+    <Classroom rdf:about="#Classroom104">
+        <hasName>Room 104</hasName>
+        <hasCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</hasCapacity>
+    </Classroom>
+    
+    <Classroom rdf:about="#Classroom105">
+        <hasName>Room 105</hasName>
+        <hasCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</hasCapacity>
+    </Classroom>
+    
+    <Classroom rdf:about="#Classroom201">
+        <hasName>Room 201</hasName>
+        <hasCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</hasCapacity>
+    </Classroom>
+    
+    <Classroom rdf:about="#Classroom202">
+        <hasName>Room 202</hasName>
+        <hasCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</hasCapacity>
+    </Classroom>
+    
+    <Classroom rdf:about="#Classroom203">
+        <hasName>Room 203</hasName>
+        <hasCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</hasCapacity>
+    </Classroom>
+    
+    <Classroom rdf:about="#Classroom204">
+        <hasName>Room 204</hasName>
+        <hasCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35</hasCapacity>
+    </Classroom>
+    
+    <Classroom rdf:about="#Classroom301">
+        <hasName>Room 301</hasName>
+        <hasCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</hasCapacity>
+    </Classroom>
+    
+    <Classroom rdf:about="#Classroom302">
+        <hasName>Room 302</hasName>
+        <hasCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</hasCapacity>
+    </Classroom>
+    
+    <Classroom rdf:about="#Classroom303">
+        <hasName>Room 303</hasName>
+        <hasCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</hasCapacity>
+    </Classroom>
+    
+    <Classroom rdf:about="#Classroom304">
+        <hasName>Room 304</hasName>
+        <hasCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</hasCapacity>
+    </Classroom>
+    
+    <!-- Offices -->
+    <Office rdf:about="#Office301">
+        <hasName>Office 301</hasName>
+        <hasFloor rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasFloor>
+    </Office>
+    
+    <Office rdf:about="#Office302">
+        <hasName>Office 302</hasName>
+        <hasFloor rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasFloor>
+    </Office>
+    
+    <Office rdf:about="#Office205">
+        <hasName>Office 205</hasName>
+        <hasFloor rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasFloor>
+    </Office>
+    
+    <Office rdf:about="#Office206">
+        <hasName>Office 206</hasName>
+        <hasFloor rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasFloor>
+    </Office>
+    
+    <Office rdf:about="#Office401">
+        <hasName>Office 401</hasName>
+        <hasFloor rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasFloor>
+    </Office>
+    
+    <Office rdf:about="#Office402">
+        <hasName>Office 402</hasName>
+        <hasFloor rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasFloor>
+    </Office>
+    
+    <Office rdf:about="#Office403">
+        <hasName>Office 403</hasName>
+        <hasFloor rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasFloor>
+    </Office>
+    
+    <Office rdf:about="#Office207">
+        <hasName>Office 207</hasName>
+        <hasFloor rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasFloor>
+    </Office>
+    
+    <Office rdf:about="#Office501">
+        <hasName>Office 501</hasName>
+        <hasFloor rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasFloor>
+    </Office>
+    
+    <Office rdf:about="#Office502">
+        <hasName>Office 502</hasName>
+        <hasFloor rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasFloor>
+    </Office>
+    
+    <Office rdf:about="#Office503">
+        <hasName>Office 503</hasName>
+        <hasFloor rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasFloor>
+    </Office>
+    
+    <Office rdf:about="#Office504">
+        <hasName>Office 504</hasName>
+        <hasFloor rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasFloor>
+    </Office>
+    
+    <Office rdf:about="#Office601">
+        <hasName>Office 601</hasName>
+        <hasFloor rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</hasFloor>
+    </Office>
+    
+    <Office rdf:about="#Office602">
+        <hasName>Office 602</hasName>
+        <hasFloor rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</hasFloor>
+    </Office>
+    
+    <Office rdf:about="#Office603">
+        <hasName>Office 603</hasName>
+        <hasFloor rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</hasFloor>
+    </Office>
+    
+    <Office rdf:about="#Office701">
+        <hasName>Office 701</hasName>
+        <hasFloor rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</hasFloor>
+    </Office>
+    
+    <Office rdf:about="#Office702">
+        <hasName>Office 702</hasName>
+        <hasFloor rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</hasFloor>
+    </Office>
+    
+    <Office rdf:about="#Office703">
+        <hasName>Office 703</hasName>
+        <hasFloor rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</hasFloor>
+    </Office>
+    
+    <!-- Degrees -->
+    <Degree rdf:about="#BachelorOfScience">
+        <hasName>Bachelor of Science</hasName>
+    </Degree>
+    
+    <Degree rdf:about="#BachelorOfArts">
+        <hasName>Bachelor of Arts</hasName>
+    </Degree>
+    
+    <Degree rdf:about="#MasterOfScience">
+        <hasName>Master of Science</hasName>
+    </Degree>
+    
+    <Degree rdf:about="#DoctorOfPhilosophy">
+        <hasName>Doctor of Philosophy</hasName>
+    </Degree>
+    
+    <!-- Semesters -->
+    <Semester rdf:about="#Fall2023">
+        <hasName>Fall 2023</hasName>
+    </Semester>
+    
+    <Semester rdf:about="#Spring2024">
+        <hasName>Spring 2024</hasName>
+    </Semester>
+    
+    <Semester rdf:about="#Summer2024">
+        <hasName>Summer 2024</hasName>
+    </Semester>
+    
+    <!-- Research Projects -->
+    <ResearchProject rdf:about="#AIResearchProject">
+        <hasName>Artificial Intelligence Research Project</hasName>
+        <fundedBy rdf:resource="#NSFGrant"/>
+    </ResearchProject>
+    
+    <ResearchProject rdf:about="#NumberTheoryProject">
+        <hasName>Number Theory Research Project</hasName>
+        <fundedBy rdf:resource="#MathematicsGrant"/>
+    </ResearchProject>
+    
+    <ResearchProject rdf:about="#QuantumPhysicsProject">
+        <hasName>Quantum Physics Research Project</hasName>
+        <fundedBy rdf:resource="#PhysicsGrant"/>
+    </ResearchProject>
+    
+    <ResearchProject rdf:about="#CybersecurityProject">
+        <hasName>Cybersecurity Research Project</hasName>
+        <fundedBy rdf:resource="#DefenseGrant"/>
+    </ResearchProject>
+    
+    <ResearchProject rdf:about="#StatisticsProject">
+        <hasName>Statistics Research Project</hasName>
+        <fundedBy rdf:resource="#StatisticsGrant"/>
+    </ResearchProject>
+    
+    <ResearchProject rdf:about="#AstrophysicsProject">
+        <hasName>Astrophysics Research Project</hasName>
+        <fundedBy rdf:resource="#SpaceGrant"/>
+    </ResearchProject>
+    
+    <!-- Publications -->
+    <Publication rdf:about="#MachineLearningPaper">
+        <hasName>Advanced Machine Learning Techniques</hasName>
+    </Publication>
+    
+    <Publication rdf:about="#NumberTheoryPaper">
+        <hasName>Modern Number Theory Applications</hasName>
+    </Publication>
+    
+    <Publication rdf:about="#QuantumPhysicsPaper">
+        <hasName>Quantum Computing Applications</hasName>
+    </Publication>
+    
+    <Publication rdf:about="#CybersecurityPaper">
+        <hasName>Cybersecurity in Modern Systems</hasName>
+    </Publication>
+    
+    <Publication rdf:about="#StatisticsPaper">
+        <hasName>Statistical Analysis Methods</hasName>
+    </Publication>
+    
+    <Publication rdf:about="#AstrophysicsPaper">
+        <hasName>Astrophysical Phenomena</hasName>
+    </Publication>
+    
+    <!-- Grants -->
+    <Grant rdf:about="#NSFGrant">
+        <hasName>NSF Research Grant</hasName>
+        <hasAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">500000.00</hasAmount>
+    </Grant>
+    
+    <Grant rdf:about="#MathematicsGrant">
+        <hasName>Mathematics Research Grant</hasName>
+        <hasAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">250000.00</hasAmount>
+    </Grant>
+    
+    <Grant rdf:about="#PhysicsGrant">
+        <hasName>Physics Research Grant</hasName>
+        <hasAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">300000.00</hasAmount>
+    </Grant>
+    
+    <Grant rdf:about="#DefenseGrant">
+        <hasName>Defense Research Grant</hasName>
+        <hasAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">400000.00</hasAmount>
+    </Grant>
+    
+    <Grant rdf:about="#StatisticsGrant">
+        <hasName>Statistics Research Grant</hasName>
+        <hasAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">200000.00</hasAmount>
+    </Grant>
+    
+    <Grant rdf:about="#SpaceGrant">
+        <hasName>Space Research Grant</hasName>
+        <hasAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">350000.00</hasAmount>
+    </Grant>
+    
+    <!-- Awards -->
+    <Award rdf:about="#ExcellenceAward">
+        <hasName>Teaching Excellence Award</hasName>
+    </Award>
+    
+    <Award rdf:about="#ResearchAward">
+        <hasName>Outstanding Research Award</hasName>
+    </Award>
+    
+    <Award rdf:about="#InnovationAward">
+        <hasName>Innovation in Education Award</hasName>
+    </Award>
+    
+    <!-- Additional Students -->
+    <Student rdf:about="#BrianLee">
+        <hasName>Brian Lee</hasName>
+        <hasEmail>brian.lee@university.edu</hasEmail>
+        <hasStudentID>2023010</hasStudentID>
+        <hasGPA rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</hasGPA>
+        <belongsTo rdf:resource="#ComputerScienceDepartment"/>
+        <pursues rdf:resource="#BachelorOfScience"/>
+        <enrolledIn rdf:resource="#CS201"/>
+        <enrolledIn rdf:resource="#CS301"/>
+    </Student>
+    <Student rdf:about="#CathyWong">
+        <hasName>Cathy Wong</hasName>
+        <hasEmail>cathy.wong@university.edu</hasEmail>
+        <hasStudentID>2023011</hasStudentID>
+        <hasGPA rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.6</hasGPA>
+        <belongsTo rdf:resource="#MathematicsDepartment"/>
+        <pursues rdf:resource="#BachelorOfArts"/>
+        <enrolledIn rdf:resource="#MATH201"/>
+        <enrolledIn rdf:resource="#MATH301"/>
+    </Student>
+    <Student rdf:about="#DanielKim">
+        <hasName>Daniel Kim</hasName>
+        <hasEmail>daniel.kim@university.edu</hasEmail>
+        <hasStudentID>2023012</hasStudentID>
+        <hasGPA rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.8</hasGPA>
+        <belongsTo rdf:resource="#PhysicsDepartment"/>
+        <pursues rdf:resource="#BachelorOfScience"/>
+        <enrolledIn rdf:resource="#PHYS101"/>
+        <enrolledIn rdf:resource="#PHYS201"/>
+    </Student>
+    <Student rdf:about="#EvaPatel">
+        <hasName>Eva Patel</hasName>
+        <hasEmail>eva.patel@university.edu</hasEmail>
+        <hasStudentID>2023013</hasStudentID>
+        <hasGPA rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.9</hasGPA>
+        <belongsTo rdf:resource="#EngineeringDepartment"/>
+        <pursues rdf:resource="#BachelorOfEngineering"/>
+        <enrolledIn rdf:resource="#ENG101"/>
+        <enrolledIn rdf:resource="#ENG201"/>
+    </Student>
+    <Student rdf:about="#FrankNguyen">
+        <hasName>Frank Nguyen</hasName>
+        <hasEmail>frank.nguyen@university.edu</hasEmail>
+        <hasStudentID>2023014</hasStudentID>
+        <hasGPA rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.4</hasGPA>
+        <belongsTo rdf:resource="#BiologyDepartment"/>
+        <pursues rdf:resource="#BachelorOfScience"/>
+        <enrolledIn rdf:resource="#BIO101"/>
+        <enrolledIn rdf:resource="#BIO201"/>
+    </Student>
+    <Student rdf:about="#GraceZhao">
+        <hasName>Grace Zhao</hasName>
+        <hasEmail>grace.zhao@university.edu</hasEmail>
+        <hasStudentID>2023015</hasStudentID>
+        <hasGPA rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.7</hasGPA>
+        <belongsTo rdf:resource="#ChemistryDepartment"/>
+        <pursues rdf:resource="#BachelorOfScience"/>
+        <enrolledIn rdf:resource="#CHEM101"/>
+        <enrolledIn rdf:resource="#CHEM201"/>
+    </Student>
+    <Student rdf:about="#HenryBrown">
+        <hasName>Henry Brown</hasName>
+        <hasEmail>henry.brown@university.edu</hasEmail>
+        <hasStudentID>2023016</hasStudentID>
+        <hasGPA rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</hasGPA>
+        <belongsTo rdf:resource="#ComputerScienceDepartment"/>
+        <pursues rdf:resource="#BachelorOfScience"/>
+        <enrolledIn rdf:resource="#CS401"/>
+        <enrolledIn rdf:resource="#CS301"/>
+    </Student>
+    <Student rdf:about="#IreneGarcia">
+        <hasName>Irene Garcia</hasName>
+        <hasEmail>irene.garcia@university.edu</hasEmail>
+        <hasStudentID>2023017</hasStudentID>
+        <hasGPA rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.6</hasGPA>
+        <belongsTo rdf:resource="#MathematicsDepartment"/>
+        <pursues rdf:resource="#BachelorOfArts"/>
+        <enrolledIn rdf:resource="#MATH401"/>
+        <enrolledIn rdf:resource="#STAT301"/>
+    </Student>
+    <Student rdf:about="#JackLee">
+        <hasName>Jack Lee</hasName>
+        <hasEmail>jack.lee@university.edu</hasEmail>
+        <hasStudentID>2023018</hasStudentID>
+        <hasGPA rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.7</hasGPA>
+        <belongsTo rdf:resource="#PhysicsDepartment"/>
+        <pursues rdf:resource="#BachelorOfScience"/>
+        <enrolledIn rdf:resource="#PHYS301"/>
+        <enrolledIn rdf:resource="#PHYS401"/>
+    </Student>
+    <Student rdf:about="#KarenSmith">
+        <hasName>Karen Smith</hasName>
+        <hasEmail>karen.smith@university.edu</hasEmail>
+        <hasStudentID>2023019</hasStudentID>
+        <hasGPA rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.8</hasGPA>
+        <belongsTo rdf:resource="#EngineeringDepartment"/>
+        <pursues rdf:resource="#BachelorOfEngineering"/>
+        <enrolledIn rdf:resource="#ENG201"/>
+        <enrolledIn rdf:resource="#ENG301"/>
+    </Student>
+    <Student rdf:about="#WilliamBrown">
+        <hasName>William Brown</hasName>
+        <hasEmail>william.brown@university.edu</hasEmail>
+        <hasStudentID>2023031</hasStudentID>
+        <hasGPA rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.6</hasGPA>
+        <belongsTo rdf:resource="#EngineeringDepartment"/>
+        <pursues rdf:resource="#BachelorOfEngineering"/>
+        <enrolledIn rdf:resource="#ENG101"/>
+        <enrolledIn rdf:resource="#ENG201"/>
+    </Student>
+    <Student rdf:about="#XinyiZhao">
+        <hasName>Xinyi Zhao</hasName>
+        <hasEmail>xinyi.zhao@university.edu</hasEmail>
+        <hasStudentID>2023032</hasStudentID>
+        <hasGPA rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.7</hasGPA>
+        <belongsTo rdf:resource="#BiologyDepartment"/>
+        <pursues rdf:resource="#BachelorOfScience"/>
+        <enrolledIn rdf:resource="#BIO101"/>
+        <enrolledIn rdf:resource="#BIO201"/>
+    </Student>
+    <Student rdf:about="#YusufKhan">
+        <hasName>Yusuf Khan</hasName>
+        <hasEmail>yusuf.khan@university.edu</hasEmail>
+        <hasStudentID>2023033</hasStudentID>
+        <hasGPA rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.6</hasGPA>
+        <belongsTo rdf:resource="#BiologyDepartment"/>
+        <pursues rdf:resource="#BachelorOfScience"/>
+        <enrolledIn rdf:resource="#BIO201"/>
+        <enrolledIn rdf:resource="#BIO301"/>
+    </Student>
+    <Student rdf:about="#ZaraSingh">
+        <hasName>Zara Singh</hasName>
+        <hasEmail>zara.singh@university.edu</hasEmail>
+        <hasStudentID>2023034</hasStudentID>
+        <hasGPA rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.8</hasGPA>
+        <belongsTo rdf:resource="#BiologyDepartment"/>
+        <pursues rdf:resource="#BachelorOfScience"/>
+        <enrolledIn rdf:resource="#BIO101"/>
+        <enrolledIn rdf:resource="#BIO301"/>
+    </Student>
+    <Student rdf:about="#AaronGreen">
+        <hasName>Aaron Green</hasName>
+        <hasEmail>aaron.green@university.edu</hasEmail>
+        <hasStudentID>2023035</hasStudentID>
+        <hasGPA rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.7</hasGPA>
+        <belongsTo rdf:resource="#ChemistryDepartment"/>
+        <pursues rdf:resource="#BachelorOfScience"/>
+        <enrolledIn rdf:resource="#CHEM101"/>
+        <enrolledIn rdf:resource="#CHEM201"/>
+    </Student>
+    <Student rdf:about="#BellaWhite">
+        <hasName>Bella White</hasName>
+        <hasEmail>bella.white@university.edu</hasEmail>
+        <hasStudentID>2023036</hasStudentID>
+        <hasGPA rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.6</hasGPA>
+        <belongsTo rdf:resource="#ChemistryDepartment"/>
+        <pursues rdf:resource="#BachelorOfScience"/>
+        <enrolledIn rdf:resource="#CHEM201"/>
+        <enrolledIn rdf:resource="#CHEM301"/>
+    </Student>
+    <Student rdf:about="#CarlosSantos">
+        <hasName>Carlos Santos</hasName>
+        <hasEmail>carlos.santos@university.edu</hasEmail>
+        <hasStudentID>2023037</hasStudentID>
+        <hasGPA rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.8</hasGPA>
+        <belongsTo rdf:resource="#ChemistryDepartment"/>
+        <pursues rdf:resource="#BachelorOfScience"/>
+        <enrolledIn rdf:resource="#CHEM101"/>
+        <enrolledIn rdf:resource="#CHEM301"/>
+    </Student>
+    <Student rdf:about="#DianaFoster">
+        <hasName>Diana Foster</hasName>
+        <hasEmail>diana.foster@university.edu</hasEmail>
+        <hasStudentID>2023038</hasStudentID>
+        <hasGPA rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.7</hasGPA>
+        <belongsTo rdf:resource="#ChemistryDepartment"/>
+        <pursues rdf:resource="#BachelorOfScience"/>
+        <enrolledIn rdf:resource="#CHEM201"/>
+        <enrolledIn rdf:resource="#CHEM301"/>
+    </Student>
+    <Student rdf:about="#EthanReed">
+        <hasName>Ethan Reed</hasName>
+        <hasEmail>ethan.reed@university.edu</hasEmail>
+        <hasStudentID>2023039</hasStudentID>
+        <hasGPA rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.6</hasGPA>
+        <belongsTo rdf:resource="#ChemistryDepartment"/>
+        <pursues rdf:resource="#BachelorOfScience"/>
+        <enrolledIn rdf:resource="#CHEM101"/>
+        <enrolledIn rdf:resource="#CHEM201"/>
+    </Student>
+    <Course rdf:about="#CS105">
+        <hasTitle>Computer Networks</hasTitle>
+        <hasCode>CS105</hasCode>
+        <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasCredits>
+        <offeredBy rdf:resource="#ComputerScienceDepartment"/>
+    </Course>
+</rdf:RDF>

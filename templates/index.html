@@ -1,0 +1,1038 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<!-- Hero Section -->
+<section class="hero-section text-center py-5 mb-5">
+  <div class="container">
+        <h1 class="display-4 fw-bold text-primary mb-4">
+            <i class="fas fa-brain me-3"></i>
+            Ontology for a University Domain
+        </h1>
+        <p class="lead text-muted mb-4">
+            Advanced Knowledge Representation and Reasoning System for Semantic Data Analysis
+        </p>
+        <div class="hero-buttons mb-4">
+            <a href="#dashboard" class="btn btn-primary btn-lg me-3">
+                <i class="fas fa-chart-line me-2"></i>Explore Dashboard
+            </a>
+            <a href="#query" class="btn btn-outline-primary btn-lg me-3">
+                <i class="fas fa-search me-2"></i>Start Querying
+            </a>
+            <a href="https://drive.google.com/uc?export=download&id=1hShbrS6f901PJhNXKRLG9J_qW_dIL6_y" class="btn btn-info btn-lg me-3" target="_blank" download>
+                <i class="fas fa-file-alt me-2"></i>Download Final Report
+            </a>
+            <button class="btn btn-warning btn-lg" id="viewSlidesBtn">
+                <i class="fas fa-presentation me-2"></i>View Presentation Slides
+            </button>
+        </div>
+        <!-- Presentation Slides Modal -->
+        <div class="modal fade" id="presentationModal" tabindex="-1" aria-labelledby="presentationModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header bg-warning text-dark">
+                <h5 class="modal-title" id="presentationModalLabel">
+                  <i class="fas fa-presentation me-2"></i>Project Presentation Slides
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="row align-items-center">
+                  <div class="col-md-7 mb-3 mb-md-0">
+                    <div class="ratio ratio-16x9 rounded shadow">
+                      <iframe src="https://docs.google.com/presentation/d/13ZMws6663pHXaS8oJKqmfovmChp2uu4p/embed?start=false&loop=false&delayms=3000" allowfullscreen style="border:0;"></iframe>
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <h4 class="fw-bold mb-3">Professional Project Presentation</h4>
+                    <p class="text-muted mb-4">View the official project slides for a comprehensive overview of the ontology system, features, analytics, and more. Click below to download the slides.</p>
+                    <a href="https://docs.google.com/presentation/d/13ZMws6663pHXaS8oJKqmfovmChp2uu4p/export/pptx" target="_blank" class="btn btn-warning btn-lg w-100 mb-2" download>
+                      <i class="fas fa-external-link-alt me-2"></i>Download Slides
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          var viewSlidesBtn = document.getElementById('viewSlidesBtn');
+          if (viewSlidesBtn) {
+            viewSlidesBtn.addEventListener('click', function() {
+              var modal = new bootstrap.Modal(document.getElementById('presentationModal'));
+              modal.show();
+            });
+          }
+        });
+        </script>
+    </div>
+</section>
+
+<!-- Dashboard Section -->
+<section id="dashboard" class="py-5">
+    <div class="container">
+        <h2 class="section-title">
+            <i class="fas fa-chart-line me-2"></i>Ontology Dashboard
+        </h2>
+        
+        <!-- Statistics Cards -->
+        <div class="row mb-5">
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="stat-card bg-primary text-white">
+                    <div class="stat-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number" id="total-classes">-</div>
+                        <div class="stat-label">Ontology Classes</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="stat-card bg-success text-white">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number" id="total-individuals">-</div>
+                        <div class="stat-label">Individuals</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="stat-card bg-warning text-white">
+                    <div class="stat-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number" id="ontology-version">v1.0</div>
+                        <div class="stat-label">Ontology Version</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="stat-card bg-info text-white">
+                    <div class="stat-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number" id="last-updated">Live</div>
+                        <div class="stat-label">System Status</div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+        <!-- Charts Section -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <h3 class="chart-section-title">
+                    <i class="fas fa-chart-bar me-2"></i>Data Visualizations
+                </h3>
+            </div>
+    </div>
+
+        <!-- First Row of Charts -->
+        <div class="row mb-4">
+            <div class="col-lg-6 mb-4">
+                <div class="card chart-card">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0">
+                            <i class="fas fa-chart-pie me-2"></i>Student Distribution by Department
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <canvas id="studentDistributionChart" height="300"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <div class="card chart-card">
+                    <div class="card-header bg-success text-white">
+                        <h5 class="mb-0">
+                            <i class="fas fa-chart-donut me-2"></i>Student GPA Distribution
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <canvas id="gpaDistributionChart" height="300"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Row of Charts -->
+        <div class="row mb-4">
+            <div class="col-lg-8 mb-4">
+                <div class="card chart-card">
+                    <div class="card-header bg-warning text-white">
+                        <h5 class="mb-0">
+                            <i class="fas fa-chart-line me-2"></i>Course Enrollment by Department
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <canvas id="enrollmentTrendChart" height="250"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card chart-card">
+                    <div class="card-header bg-info text-white">
+                        <h5 class="mb-0">
+                            <i class="fas fa-chart-bar me-2"></i>Professors by Department
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <canvas id="professorChart" height="250"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Third Row of Charts -->
+        <div class="row mb-4">
+            <div class="col-lg-6 mb-4">
+                <div class="card chart-card">
+                    <div class="card-header bg-danger text-white">
+                        <h5 class="mb-0">
+                            <i class="fas fa-chart-area me-2"></i>Research Funding Distribution
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <canvas id="fundingChart" height="250"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <div class="card chart-card">
+                    <div class="card-header bg-secondary text-white">
+                        <h5 class="mb-0">
+                            <i class="fas fa-chart-radar me-2"></i>Department Performance Metrics
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <canvas id="performanceChart" height="250"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fourth Row of Charts -->
+        <div class="row mb-4">
+            <div class="col-lg-6 mb-4">
+                <div class="card chart-card">
+                    <div class="card-header bg-dark text-white">
+                        <h5 class="mb-0">
+                            <i class="fas fa-chart-bar me-2"></i>Classroom Capacity Utilization
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <canvas id="classroomChart" height="250"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <div class="card chart-card">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0">
+                            <i class="fas fa-chart-pie me-2"></i>Course Credits Distribution
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <canvas id="creditsChart" height="250"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chart Controls -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header bg-light">
+                        <h6 class="mb-0">
+                            <i class="fas fa-sliders-h me-2"></i>Chart Controls
+                        </h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3 mb-3">
+                                <label class="form-label">Chart Type</label>
+                                <select class="form-select" id="chartTypeSelector">
+                                    <option value="bar">Bar Chart</option>
+                                    <option value="line">Line Chart</option>
+                                    <option value="pie">Pie Chart</option>
+                                    <option value="doughnut">Doughnut Chart</option>
+                                    <option value="radar">Radar Chart</option>
+                                    <option value="polarArea">Polar Area</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label class="form-label">Color Theme</label>
+                                <select class="form-select" id="colorThemeSelector">
+                                    <option value="default">Default</option>
+                                    <option value="warm">Warm Colors</option>
+                                    <option value="cool">Cool Colors</option>
+                                    <option value="monochrome">Monochrome</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label class="form-label">Animation</label>
+                                <select class="form-select" id="animationSelector">
+                                    <option value="true">Enabled</option>
+                                    <option value="false">Disabled</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label class="form-label">Actions</label>
+        <div class="d-grid">
+                                    <button class="btn btn-primary btn-sm" onclick="exportCharts()">
+                                        <i class="fas fa-download me-1"></i>Export Charts
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SPARQL Query Section -->
+<section id="query" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="section-title">
+            <i class="fas fa-search me-2"></i>SPARQL Query Interface
+        </h2>
+
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0">
+                            <i class="fas fa-code me-2"></i>Query Editor
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <form id="sparql-form">
+                            <div class="form-group mb-3">
+                                <label for="query-text" class="form-label fw-bold">
+                                    <i class="fas fa-terminal me-1"></i>SPARQL Query
+                                </label>
+                                <textarea class="form-control query-editor" id="query-text" name="query" rows="8" 
+                                    placeholder="Enter your SPARQL query here...">PREFIX university: <http://www.semanticweb.org/university#>
+SELECT ?name ?email WHERE {
+    ?student university:hasName ?name .
+    ?student university:hasEmail ?email .
+}
+LIMIT 10</textarea>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="fas fa-play me-2"></i>Execute Query
+                                </button>
+                                <button type="button" class="btn btn-outline-secondary" onclick="clearQuery()">
+                                    <i class="fas fa-eraser me-2"></i>Clear
+                                </button>
+        </div>
+      </form>
+                        <div id="query-error" class="alert alert-danger d-none mt-3">
+                            <i class="fas fa-exclamation-triangle me-2"></i>
+                            <span id="error-message"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-success text-white">
+                        <h5 class="mb-0">
+                            <i class="fas fa-lightbulb me-2"></i>Query Examples
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="list-group list-group-flush" id="query-examples-list">
+                            <button class="list-group-item list-group-item-action" onclick="loadSampleQuery('students')">
+                                <i class="fas fa-user-graduate me-2"></i>All Students
+                            </button>
+                            <button class="list-group-item list-group-item-action" onclick="loadSampleQuery('courses')">
+                                <i class="fas fa-book me-2"></i>All Courses
+                            </button>
+                            <button class="list-group-item list-group-item-action" onclick="loadSampleQuery('professors')">
+                                <i class="fas fa-chalkboard-teacher me-2"></i>All Professors
+                            </button>
+                            <button class="list-group-item list-group-item-action" onclick="loadSampleQuery('enrollments')">
+                                <i class="fas fa-link me-2"></i>Student Enrollments
+                            </button>
+                            <button class="list-group-item list-group-item-action" onclick="loadSampleQuery('active_departments')">
+                                <i class="fas fa-building me-2"></i>Active Departments
+                            </button>
+                            <!-- Hidden advanced queries -->
+                            <div id="more-queries" style="display:none;">
+                                <button class="list-group-item list-group-item-action" onclick="loadSampleQuery('courses_with_enrollments')">
+                                    <i class="fas fa-user-check me-2"></i>Courses with Enrollments
+                                </button>
+                                <button class="list-group-item list-group-item-action" onclick="loadSampleQuery('professors_with_courses')">
+                                    <i class="fas fa-chalkboard me-2"></i>Professors with Courses
+                                </button>
+                                <button class="list-group-item list-group-item-action" onclick="loadSampleQuery('students_with_enrollments')">
+                                    <i class="fas fa-user-friends me-2"></i>Students with Enrollments
+                                </button>
+                            </div>
+                            <button class="list-group-item list-group-item-action text-center fw-bold" id="show-more-queries" onclick="toggleMoreQueries()">
+                                <span id="show-more-text">Show More <i class='fas fa-chevron-down'></i></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Results Section -->
+<section id="results" class="py-5 d-none">
+    <div class="container">
+        <div class="card shadow-sm">
+            <div class="card-header bg-info text-white d-flex justify-content-between align-items-center">
+                <h5 class="mb-0">
+                    <i class="fas fa-table me-2"></i>Query Results
+                </h5>
+                <div class="results-meta">
+                    <span class="badge bg-light text-dark me-2" id="results-count">0 results</span>
+                    <span class="badge bg-light text-dark" id="results-time">0.00s</span>
+                </div>
+            </div>
+            <div class="card-body p-0">
+                <div class="table-responsive">
+                    <table class="table table-hover mb-0" id="results-table">
+                        <thead class="table-light"></thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+    </div>
+  </div>
+</section>
+
+<!-- Chart.js Library -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+
+<script>
+// Sample queries
+const sampleQueries = {
+    students: `PREFIX university: <http://www.semanticweb.org/university#>
+SELECT ?name ?email ?gpa ?department WHERE {
+    ?student university:hasName ?name .
+    ?student university:hasEmail ?email .
+    ?student university:hasGPA ?gpa .
+    ?student university:belongsTo ?dept .
+    ?dept university:hasName ?department .
+}
+ORDER BY DESC(?gpa)`,
+    courses: `PREFIX university: <http://www.semanticweb.org/university#>
+SELECT ?code ?title ?credits ?department WHERE {
+    ?course university:hasCode ?code .
+    ?course university:hasTitle ?title .
+    ?course university:hasCredits ?credits .
+    ?course university:offeredBy ?dept .
+    ?dept university:hasName ?department .
+}
+ORDER BY ?code`,
+    professors: `PREFIX university: <http://www.semanticweb.org/university#>
+SELECT ?name ?email ?department ?office WHERE {
+    ?professor university:hasName ?name .
+    ?professor university:hasEmail ?email .
+    ?professor university:worksIn ?dept .
+    ?dept university:hasName ?department .
+    ?professor university:hasOffice ?off .
+    ?off university:hasName ?office .
+}
+ORDER BY ?department`,
+    enrollments: `PREFIX university: <http://www.semanticweb.org/university#>
+SELECT ?studentName ?courseTitle ?department WHERE {
+    ?student university:hasName ?studentName .
+    ?student university:enrolledIn ?course .
+    ?course university:hasTitle ?courseTitle .
+    ?course university:offeredBy ?dept .
+    ?dept university:hasName ?department .
+}
+ORDER BY ?studentName`,
+    active_departments: `PREFIX university: <http://www.semanticweb.org/university#>
+SELECT DISTINCT ?departmentName WHERE {
+    ?dept university:hasName ?departmentName .
+    { ?student university:belongsTo ?dept } UNION { ?professor university:worksIn ?dept } UNION { ?course university:offeredBy ?dept }
+}
+ORDER BY ?departmentName`,
+    courses_with_enrollments: `PREFIX university: <http://www.semanticweb.org/university#>
+SELECT ?courseTitle (COUNT(?student) AS ?enrollmentCount) WHERE {
+    ?course university:hasTitle ?courseTitle .
+    ?student university:enrolledIn ?course .
+}
+GROUP BY ?courseTitle
+HAVING (COUNT(?student) > 0)
+ORDER BY DESC(?enrollmentCount)`,
+    professors_with_courses: `PREFIX university: <http://www.semanticweb.org/university#>
+SELECT ?professorName (COUNT(?course) AS ?courseCount) WHERE {
+    ?professor university:hasName ?professorName .
+    ?professor university:teaches ?course .
+}
+GROUP BY ?professorName
+HAVING (COUNT(?course) > 0)
+ORDER BY DESC(?courseCount)`,
+    students_with_enrollments: `PREFIX university: <http://www.semanticweb.org/university#>
+SELECT ?studentName (COUNT(?course) AS ?courseCount) WHERE {
+    ?student university:hasName ?studentName .
+    ?student university:enrolledIn ?course .
+}
+GROUP BY ?studentName
+HAVING (COUNT(?course) > 0)
+ORDER BY DESC(?courseCount)`
+};
+
+// Chart configurations with expanded data
+const chartConfigs = {
+    // Student Distribution by Department (Pie)
+    studentDistribution: {
+        type: 'pie',
+        data: {
+            labels: ['Computer Science', 'Mathematics', 'Physics', 'Engineering', 'Biology', 'Chemistry'],
+            datasets: [{
+                data: [8, 6, 4, 5, 3, 4],
+                backgroundColor: [
+                    '#3B82F6', '#10B981', '#F59E0B', '#EF4444', '#8B5CF6', '#06B6D4'
+                ],
+                borderWidth: 2,
+                borderColor: '#ffffff'
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    position: 'bottom'
+                },
+                title: {
+                    display: true,
+                    text: 'Student Distribution by Department'
+                }
+            }
+        }
+    },
+
+    // GPA Distribution Chart (Doughnut)
+    gpaDistribution: {
+        type: 'doughnut',
+        data: {
+            labels: ['3.0-3.4', '3.5-3.7', '3.8-4.0'],
+            datasets: [{
+                data: [8, 12, 10],
+                backgroundColor: [
+                    '#EF4444', '#F59E0B', '#10B981'
+                ],
+                borderWidth: 2,
+                borderColor: '#ffffff'
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    position: 'bottom'
+                },
+                title: {
+                    display: true,
+                    text: 'Student GPA Distribution'
+                }
+            }
+        }
+    },
+
+    // Course Enrollment by Department (Line)
+    enrollmentTrend: {
+        type: 'line',
+        data: {
+            labels: ['Computer Science', 'Mathematics', 'Physics', 'Engineering', 'Biology', 'Chemistry'],
+            datasets: [{
+                label: 'Number of Courses',
+                data: [8, 6, 5, 7, 4, 5],
+                borderColor: '#F59E0B',
+                backgroundColor: 'rgba(245, 158, 11, 0.1)',
+                borderWidth: 3,
+                fill: true,
+                tension: 0.4
+            }, {
+                label: 'Total Credits',
+                data: [28, 22, 18, 25, 15, 19],
+                borderColor: '#3B82F6',
+                backgroundColor: 'rgba(59, 130, 246, 0.1)',
+                borderWidth: 3,
+                fill: true,
+                tension: 0.4
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    position: 'top'
+                },
+                title: {
+                    display: true,
+                    text: 'Course Distribution by Department'
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    },
+
+    // Professor Chart
+    professorChart: {
+        type: 'bar',
+        data: {
+            labels: ['Computer Science', 'Mathematics', 'Physics', 'Engineering', 'Biology', 'Chemistry'],
+            datasets: [{
+                label: 'Number of Professors',
+                data: [4, 3, 3, 4, 2, 3],
+                backgroundColor: [
+                    '#06B6D4', '#8B5CF6', '#EC4899', '#F59E0B', '#10B981', '#3B82F6'
+                ],
+                borderWidth: 0,
+                borderRadius: 5
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    display: false
+                },
+                title: {
+                    display: true,
+                    text: 'Professors by Department'
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    ticks: {
+                        stepSize: 1
+                    }
+                }
+            }
+        }
+    },
+
+    // Research Funding Distribution (Area)
+    fundingChart: {
+        type: 'line',
+        data: {
+            labels: ['AI Research', 'Machine Learning', 'Number Theory', 'Quantum Physics', 'Cybersecurity', 'Statistics', 'Astrophysics', 'Robotics', 'Biotechnology', 'Nanotechnology', 'Organic Chemistry', 'Biochemistry'],
+            datasets: [{
+                label: 'Funding Amount ($K)',
+                data: [800, 600, 400, 500, 700, 300, 450, 550, 350, 400, 250, 300],
+                borderColor: '#EF4444',
+                backgroundColor: 'rgba(239, 68, 68, 0.2)',
+                borderWidth: 3,
+                fill: true,
+                tension: 0.4
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    display: false
+                },
+                title: {
+                    display: true,
+                    text: 'Research Funding Distribution'
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    },
+
+    // Performance Chart
+    performanceChart: {
+        type: 'radar',
+        data: {
+            labels: ['Students', 'Courses', 'Professors', 'Research Projects', 'Publications', 'Funding ($K)'],
+            datasets: [{
+                label: 'Computer Science',
+                data: [8, 8, 4, 4, 4, 2100],
+                borderColor: '#3B82F6',
+                backgroundColor: 'rgba(59, 130, 246, 0.2)',
+                borderWidth: 2
+            }, {
+                label: 'Mathematics',
+                data: [6, 6, 3, 3, 3, 700],
+                borderColor: '#10B981',
+                backgroundColor: 'rgba(16, 185, 129, 0.2)',
+                borderWidth: 2
+            }, {
+                label: 'Physics',
+                data: [4, 5, 3, 3, 3, 950],
+                borderColor: '#F59E0B',
+                backgroundColor: 'rgba(245, 158, 11, 0.2)',
+                borderWidth: 2
+            }, {
+                label: 'Engineering',
+                data: [5, 7, 4, 4, 4, 1300],
+                borderColor: '#EF4444',
+                backgroundColor: 'rgba(239, 68, 68, 0.2)',
+                borderWidth: 2
+            }, {
+                label: 'Biology',
+                data: [3, 4, 2, 2, 2, 650],
+                borderColor: '#8B5CF6',
+                backgroundColor: 'rgba(139, 92, 246, 0.2)',
+                borderWidth: 2
+            }, {
+                label: 'Chemistry',
+                data: [4, 5, 3, 3, 3, 550],
+                borderColor: '#06B6D4',
+                backgroundColor: 'rgba(6, 182, 212, 0.2)',
+                borderWidth: 2
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    position: 'bottom'
+                },
+                title: {
+                    display: true,
+                    text: 'Department Performance Comparison'
+                }
+            },
+            scales: {
+                r: {
+                    beginAtZero: true,
+                    max: 2500
+                }
+            }
+        }
+    },
+
+    // Classroom Capacity Utilization (Bar)
+    classroomChart: {
+        type: 'bar',
+        data: {
+            labels: ['Room 101', 'Room 102', 'Room 103', 'Room 104', 'Room 105', 'Room 201', 'Room 202', 'Room 203', 'Room 204', 'Room 301', 'Room 302', 'Room 303', 'Room 304', 'Room 401', 'Room 402', 'Room 403', 'Room 404', 'Room 501', 'Room 502', 'Room 503', 'Room 504'],
+            datasets: [{
+                label: 'Capacity',
+                data: [30, 25, 35, 40, 20, 45, 30, 25, 35, 50, 40, 30, 25, 35, 40, 30, 45, 25, 35, 40, 30],
+                backgroundColor: 'rgba(59, 130, 246, 0.5)',
+                borderColor: '#3B82F6',
+                borderWidth: 1
+            }, {
+                label: 'Average Enrollment',
+                data: [25, 20, 30, 35, 15, 40, 25, 20, 30, 45, 35, 25, 20, 30, 35, 25, 40, 20, 30, 35, 25],
+                backgroundColor: 'rgba(16, 185, 129, 0.7)',
+                borderColor: '#10B981',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    position: 'top'
+                },
+                title: {
+                    display: true,
+                    text: 'Classroom Capacity vs Enrollment'
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    },
+
+    // Credits Chart
+    creditsChart: {
+        type: 'pie',
+        data: {
+            labels: ['3 Credits', '4 Credits'],
+            datasets: [{
+                data: [15, 20],
+                backgroundColor: [
+                    '#8B5CF6', '#EC4899'
+                ],
+                borderWidth: 2,
+                borderColor: '#ffffff'
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    position: 'bottom'
+                },
+                title: {
+                    display: true,
+                    text: 'Course Credits Distribution'
+                }
+            }
+        }
+    }
+};
+
+// Initialize charts
+let charts = {};
+
+function initializeCharts() {
+    // Student Distribution Chart
+    const studentCtx = document.getElementById('studentDistributionChart').getContext('2d');
+    charts.studentDistribution = new Chart(studentCtx, chartConfigs.studentDistribution);
+
+    // GPA Distribution Chart
+    const gpaCtx = document.getElementById('gpaDistributionChart').getContext('2d');
+    charts.gpaDistribution = new Chart(gpaCtx, chartConfigs.gpaDistribution);
+
+    // Enrollment Trend Chart
+    const enrollmentCtx = document.getElementById('enrollmentTrendChart').getContext('2d');
+    charts.enrollmentTrend = new Chart(enrollmentCtx, chartConfigs.enrollmentTrend);
+
+    // Professor Chart
+    const professorCtx = document.getElementById('professorChart').getContext('2d');
+    charts.professorChart = new Chart(professorCtx, chartConfigs.professorChart);
+
+    // Funding Chart
+    const fundingCtx = document.getElementById('fundingChart').getContext('2d');
+    charts.fundingChart = new Chart(fundingCtx, chartConfigs.fundingChart);
+
+    // Performance Chart
+    const performanceCtx = document.getElementById('performanceChart').getContext('2d');
+    charts.performanceChart = new Chart(performanceCtx, chartConfigs.performanceChart);
+
+    // Classroom Chart
+    const classroomCtx = document.getElementById('classroomChart').getContext('2d');
+    charts.classroomChart = new Chart(classroomCtx, chartConfigs.classroomChart);
+
+    // Credits Chart
+    const creditsCtx = document.getElementById('creditsChart').getContext('2d');
+    charts.creditsChart = new Chart(creditsCtx, chartConfigs.creditsChart);
+}
+
+// Chart controls
+function updateChartType() {
+    const type = document.getElementById('chartTypeSelector').value;
+    const theme = document.getElementById('colorThemeSelector').value;
+    const animation = document.getElementById('animationSelector').value === 'true';
+
+    Object.values(charts).forEach(chart => {
+        chart.config.type = type;
+        chart.config.options.animation = animation;
+        chart.update();
+    });
+}
+
+function exportCharts() {
+    showLoading('Exporting charts as ZIP...');
+    const zip = new JSZip();
+
+    // Add each chart to the zip file
+    Object.entries(charts).forEach(([name, chartInstance]) => {
+        const canvas = chartInstance.canvas;
+        const dataURL = canvas.toDataURL('image/png');
+        const base64Data = dataURL.split(',')[1];
+        zip.file(`${name}.png`, base64Data, { base64: true });
+    });
+
+    // Generate zip file and trigger download
+    zip.generateAsync({ type: 'blob' })
+        .then(function(content) {
+            saveAs(content, 'KRR_Charts_Export.zip');
+            hideLoading();
+            showSuccess('Charts exported successfully!');
+        })
+        .catch(function(error) {
+            hideLoading();
+            showNotification('Failed to export charts: ' + error.message, 'danger');
+        });
+}
+
+// Load sample query
+function loadSampleQuery(type) {
+    document.getElementById('query-text').value = sampleQueries[type] || '';
+    document.getElementById('query-text').focus();
+}
+
+// Clear query
+function clearQuery() {
+    document.getElementById('query-text').value = '';
+    document.getElementById('query-text').focus();
+}
+
+// Fetch ontology stats
+async function loadStats() {
+    try {
+        const response = await fetch('/api/ontology/stats');
+        const data = await response.json();
+        if (data.success) {
+            document.getElementById('total-classes').textContent = data.data.total_classes;
+            document.getElementById('total-individuals').textContent = data.data.total_individuals;
+            document.getElementById('last-updated').textContent = 'Online';
+        }
+    } catch (error) {
+        console.error('Error loading stats:', error);
+    }
+}
+
+// SPARQL query form
+document.getElementById('sparql-form').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    
+    const queryText = document.getElementById('query-text').value;
+    const errorDiv = document.getElementById('query-error');
+    const resultsSection = document.getElementById('results');
+    
+    errorDiv.classList.add('d-none');
+    
+    const submitBtn = e.target.querySelector('button[type="submit"]');
+    const originalText = submitBtn.innerHTML;
+    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Executing...';
+    submitBtn.disabled = true;
+    
+    try {
+        const startTime = performance.now();
+        const response = await fetch('/api/ontology/query', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ query: queryText })
+        });
+        const endTime = performance.now();
+        
+        const data = await response.json();
+        
+        if (data.success) {
+            showResults(data.data, endTime - startTime);
+            resultsSection.classList.remove('d-none');
+            resultsSection.scrollIntoView({ behavior: 'smooth' });
+        } else {
+            throw new Error(data.error);
+        }
+    } catch (error) {
+        document.getElementById('error-message').textContent = error.message;
+        errorDiv.classList.remove('d-none');
+        resultsSection.classList.add('d-none');
+    } finally {
+        submitBtn.innerHTML = originalText;
+        submitBtn.disabled = false;
+    }
+});
+
+// Show results
+function showResults(rows, executionTime) {
+    const table = document.getElementById('results-table');
+    const countSpan = document.getElementById('results-count');
+    const timeSpan = document.getElementById('results-time');
+    
+    countSpan.textContent = `${rows.length} results`;
+    timeSpan.textContent = `${(executionTime / 1000).toFixed(2)}s`;
+    
+    if (rows.length === 0) {
+        table.querySelector('thead').innerHTML = '<tr><th class="text-center">No results found</th></tr>';
+        table.querySelector('tbody').innerHTML = '';
+        return;
+    }
+    
+    const columns = Object.keys(rows[0]);
+    const headerRow = '<tr>' + columns.map(col => `<th>${col}</th>`).join('') + '</tr>';
+    table.querySelector('thead').innerHTML = headerRow;
+    
+    const bodyRows = rows.map(row => {
+        return '<tr>' + columns.map(col => `<td>${row[col] || ''}</td>`).join('') + '</tr>';
+    }).join('');
+    table.querySelector('tbody').innerHTML = bodyRows;
+}
+
+// Utility functions
+function showLoading(message) {
+    const overlay = document.createElement('div');
+    overlay.className = 'loading-overlay';
+    overlay.innerHTML = `
+        <div class="loading-content">
+            <div class="spinner-border text-primary" role="status"></div>
+            <p class="mt-3">${message}</p>
+        </div>
+    `;
+    document.body.appendChild(overlay);
+}
+
+function hideLoading() {
+    const overlay = document.querySelector('.loading-overlay');
+    if (overlay) {
+        overlay.remove();
+    }
+}
+
+function showSuccess(message) {
+    showNotification(message, 'success');
+}
+
+function showNotification(message, type) {
+    const notification = document.createElement('div');
+    notification.className = `alert alert-${type} alert-dismissible fade show position-fixed`;
+    notification.style.cssText = 'top: 20px; right: 20px; z-index: 9999; min-width: 300px;';
+    notification.innerHTML = `
+        ${message}
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    `;
+    document.body.appendChild(notification);
+    setTimeout(() => {
+        notification.remove();
+    }, 5000);
+}
+
+// Event listeners for chart controls
+document.getElementById('chartTypeSelector').addEventListener('change', updateChartType);
+document.getElementById('colorThemeSelector').addEventListener('change', updateChartType);
+document.getElementById('animationSelector').addEventListener('change', updateChartType);
+
+// Load initial data
+document.addEventListener('DOMContentLoaded', function() {
+    loadStats();
+    initializeCharts();
+});
+
+function toggleMoreQueries() {
+    var more = document.getElementById('more-queries');
+    var btn = document.getElementById('show-more-queries');
+    var text = document.getElementById('show-more-text');
+    if (more.style.display === 'none') {
+        more.style.display = 'block';
+        text.innerHTML = "Show Less <i class='fas fa-chevron-up'></i>";
+    } else {
+        more.style.display = 'none';
+        text.innerHTML = "Show More <i class='fas fa-chevron-down'></i>";
+    }
+}
+</script>
+
+{% endblock %} 

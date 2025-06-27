@@ -1,0 +1,343 @@
+# Comprehensive SPARQL Queries for Enhanced University Ontology
+
+# 1. Get all students with complete details
+PREFIX university: <http://www.semanticweb.org/university#>
+SELECT ?name ?email ?gpa ?studentID ?department ?degree
+WHERE {
+    ?student university:hasName ?name .
+    ?student university:hasEmail ?email .
+    ?student university:hasGPA ?gpa .
+    ?student university:hasStudentID ?studentID .
+    ?student university:belongsTo ?dept .
+    ?dept university:hasName ?department .
+    ?student university:pursues ?deg .
+    ?deg university:hasName ?degree .
+}
+ORDER BY ?gpa DESC
+
+# 2. Get all professors with their departments and offices
+PREFIX university: <http://www.semanticweb.org/university#>
+SELECT ?name ?email ?department ?office ?floor
+WHERE {
+    ?professor university:hasName ?name .
+    ?professor university:hasEmail ?email .
+    ?professor university:worksIn ?dept .
+    ?dept university:hasName ?department .
+    ?professor university:hasOffice ?off .
+    ?off university:hasName ?office .
+    ?off university:hasFloor ?floor .
+}
+ORDER BY ?department
+
+# 3. Get all courses with detailed information
+PREFIX university: <http://www.semanticweb.org/university#>
+SELECT ?code ?title ?credits ?department ?semester ?classroom ?capacity
+WHERE {
+    ?course university:hasCode ?code .
+    ?course university:hasTitle ?title .
+    ?course university:hasCredits ?credits .
+    ?course university:offeredBy ?dept .
+    ?dept university:hasName ?department .
+    ?course university:offeredIn ?sem .
+    ?sem university:hasName ?semester .
+    ?course university:conductedIn ?room .
+    ?room university:hasName ?classroom .
+    ?room university:hasCapacity ?capacity .
+}
+ORDER BY ?code
+
+# 4. Find students enrolled in multiple courses
+PREFIX university: <http://www.semanticweb.org/university#>
+SELECT ?studentName ?courseCount ?courses
+WHERE {
+    {
+        SELECT ?student ?studentName (COUNT(?course) AS ?courseCount) (GROUP_CONCAT(?courseTitle; separator=", ") AS ?courses)
+        WHERE {
+            ?student university:hasName ?studentName .
+            ?student university:enrolledIn ?course .
+            ?course university:hasTitle ?courseTitle .
+        }
+        GROUP BY ?student ?studentName
+        HAVING (COUNT(?course) > 2)
+    }
+}
+ORDER BY DESC(?courseCount)
+
+# 5. Get teaching assignments with classroom details
+PREFIX university: <http://www.semanticweb.org/university#>
+SELECT ?professorName ?courseTitle ?classroom ?capacity ?building
+WHERE {
+    ?professor university:hasName ?professorName .
+    ?professor university:teaches ?course .
+    ?course university:hasTitle ?courseTitle .
+    ?course university:conductedIn ?room .
+    ?room university:hasName ?classroom .
+    ?room university:hasCapacity ?capacity .
+    ?course university:offeredBy ?dept .
+    ?dept university:locatedIn ?bldg .
+    ?bldg university:hasName ?building .
+}
+ORDER BY ?professorName
+
+# 6. Find research projects with funding information
+PREFIX university: <http://www.semanticweb.org/university#>
+SELECT ?projectName ?leaderName ?grantName ?amount
+WHERE {
+    ?project university:hasName ?projectName .
+    ?professor university:leads ?project .
+    ?professor university:hasName ?leaderName .
+    ?project university:fundedBy ?grant .
+    ?grant university:hasName ?grantName .
+    ?grant university:hasAmount ?amount .
+}
+ORDER BY DESC(?amount)
+
+# 7. Get department statistics
+PREFIX university: <http://www.semanticweb.org/university#>
+SELECT ?departmentName ?studentCount ?professorCount ?courseCount ?building
+WHERE {
+    {
+        SELECT ?dept ?departmentName (COUNT(DISTINCT ?student) AS ?studentCount) (COUNT(DISTINCT ?professor) AS ?professorCount) (COUNT(DISTINCT ?course) AS ?courseCount)
+        WHERE {
+            ?dept university:hasName ?departmentName .
+            ?student university:belongsTo ?dept .
+            ?professor university:worksIn ?dept .
+            ?course university:offeredBy ?dept .
+        }
+        GROUP BY ?dept ?departmentName
+    }
+    ?dept university:locatedIn ?bldg .
+    ?bldg university:hasName ?building .
+}
+ORDER BY DESC(?studentCount)
+
+# 8. Find students with high GPA (>3.7)
+PREFIX university: <http://www.semanticweb.org/university#>
+SELECT ?name ?gpa ?department ?courses
+WHERE {
+    ?student university:hasName ?name .
+    ?student university:hasGPA ?gpa .
+    ?student university:belongsTo ?dept .
+    ?dept university:hasName ?department .
+    FILTER(?gpa > 3.7)
+    {
+        SELECT ?student (GROUP_CONCAT(?courseTitle; separator=", ") AS ?courses)
+        WHERE {
+            ?student university:enrolledIn ?course .
+            ?course university:hasTitle ?courseTitle .
+        }
+        GROUP BY ?student
+    }
+}
+ORDER BY DESC(?gpa)
+
+# 9. Get classroom utilization
+PREFIX university: <http://www.semanticweb.org/university#>
+SELECT ?classroom ?capacity ?courseTitle ?enrollmentCount
+WHERE {
+    ?room university:hasName ?classroom .
+    ?room university:hasCapacity ?capacity .
+    ?course university:conductedIn ?room .
+    ?course university:hasTitle ?courseTitle .
+    {
+        SELECT ?course (COUNT(?student) AS ?enrollmentCount)
+        WHERE {
+            ?student university:enrolledIn ?course .
+        }
+        GROUP BY ?course
+    }
+}
+ORDER BY DESC(?enrollmentCount)
+
+# 10. Find professors with multiple publications
+PREFIX university: <http://www.semanticweb.org/university#>
+SELECT ?professorName ?publicationCount ?publications
+WHERE {
+    {
+        SELECT ?professor ?professorName (COUNT(?pub) AS ?publicationCount) (GROUP_CONCAT(?pubName; separator=", ") AS ?publications)
+        WHERE {
+            ?professor university:hasName ?professorName .
+            ?professor university:publishes ?pub .
+            ?pub university:hasName ?pubName .
+        }
+        GROUP BY ?professor ?professorName
+    }
+}
+ORDER BY DESC(?publicationCount)
+
+# 11. Get building information with departments
+PREFIX university: <http://www.semanticweb.org/university#>
+SELECT ?buildingName ?departmentName ?professorCount ?studentCount
+WHERE {
+    ?bldg university:hasName ?buildingName .
+    ?dept university:locatedIn ?bldg .
+    ?dept university:hasName ?departmentName .
+    {
+        SELECT ?dept (COUNT(DISTINCT ?professor) AS ?professorCount) (COUNT(DISTINCT ?student) AS ?studentCount)
+        WHERE {
+            ?professor university:worksIn ?dept .
+            ?student university:belongsTo ?dept .
+        }
+        GROUP BY ?dept
+    }
+}
+ORDER BY ?buildingName
+
+# 12. Find courses by semester with enrollment
+PREFIX university: <http://www.semanticweb.org/university#>
+SELECT ?semester ?courseTitle ?enrollmentCount ?department
+WHERE {
+    ?course university:offeredIn ?sem .
+    ?sem university:hasName ?semester .
+    ?course university:hasTitle ?courseTitle .
+    ?course university:offeredBy ?dept .
+    ?dept university:hasName ?department .
+    {
+        SELECT ?course (COUNT(?student) AS ?enrollmentCount)
+        WHERE {
+            ?student university:enrolledIn ?course .
+        }
+        GROUP BY ?course
+    }
+}
+ORDER BY ?semester ?enrollmentCount DESC
+
+# 13. Get award-winning professors
+PREFIX university: <http://www.semanticweb.org/university#>
+SELECT ?professorName ?awardName ?department
+WHERE {
+    ?professor university:hasName ?professorName .
+    ?professor university:receives ?award .
+    ?award university:hasName ?awardName .
+    ?professor university:worksIn ?dept .
+    ?dept university:hasName ?department .
+}
+ORDER BY ?professorName
+
+# 14. Find research collaborations
+PREFIX university: <http://www.semanticweb.org/university#>
+SELECT ?projectName ?leaderName ?participantName
+WHERE {
+    ?project university:hasName ?projectName .
+    ?professor university:leads ?project .
+    ?professor university:hasName ?leaderName .
+    ?student university:participatesIn ?project .
+    ?student university:hasName ?participantName .
+}
+ORDER BY ?projectName
+
+# 15. Get comprehensive statistics
+PREFIX university: <http://www.semanticweb.org/university#>
+SELECT 
+    (COUNT(DISTINCT ?student) AS ?totalStudents)
+    (COUNT(DISTINCT ?professor) AS ?totalProfessors)
+    (COUNT(DISTINCT ?course) AS ?totalCourses)
+    (COUNT(DISTINCT ?department) AS ?totalDepartments)
+    (COUNT(DISTINCT ?building) AS ?totalBuildings)
+    (COUNT(DISTINCT ?project) AS ?totalProjects)
+    (COUNT(DISTINCT ?publication) AS ?totalPublications)
+WHERE {
+    ?student a university:Student .
+    ?professor a university:Professor .
+    ?course a university:Course .
+    ?department a university:Department .
+    ?building a university:Building .
+    ?project a university:ResearchProject .
+    ?publication a university:Publication .
+}
+
+# 16. Find courses with highest enrollment
+PREFIX university: <http://www.semanticweb.org/university#>
+SELECT ?courseTitle ?enrollmentCount ?capacity ?utilization
+WHERE {
+    ?course university:hasTitle ?courseTitle .
+    ?course university:conductedIn ?room .
+    ?room university:hasCapacity ?capacity .
+    {
+        SELECT ?course (COUNT(?student) AS ?enrollmentCount)
+        WHERE {
+            ?student university:enrolledIn ?course .
+        }
+        GROUP BY ?course
+    }
+    BIND((?enrollmentCount * 100 / ?capacity) AS ?utilization)
+}
+ORDER BY DESC(?enrollmentCount)
+
+# 17. Get professor workload
+PREFIX university: <http://www.semanticweb.org/university#>
+SELECT ?professorName ?courseCount ?projectCount ?publicationCount
+WHERE {
+    ?professor university:hasName ?professorName .
+    {
+        SELECT ?professor (COUNT(DISTINCT ?course) AS ?courseCount)
+        WHERE {
+            ?professor university:teaches ?course .
+        }
+        GROUP BY ?professor
+    }
+    {
+        SELECT ?professor (COUNT(DISTINCT ?project) AS ?projectCount)
+        WHERE {
+            ?professor university:leads ?project .
+        }
+        GROUP BY ?professor
+    }
+    {
+        SELECT ?professor (COUNT(DISTINCT ?pub) AS ?publicationCount)
+        WHERE {
+            ?professor university:publishes ?pub .
+        }
+        GROUP BY ?professor
+    }
+}
+ORDER BY DESC(?courseCount)
+
+# 18. Find students by department with GPA analysis
+PREFIX university: <http://www.semanticweb.org/university#>
+SELECT ?departmentName ?studentCount ?avgGPA ?maxGPA ?minGPA
+WHERE {
+    {
+        SELECT ?dept ?departmentName (COUNT(?student) AS ?studentCount) (AVG(?gpa) AS ?avgGPA) (MAX(?gpa) AS ?maxGPA) (MIN(?gpa) AS ?minGPA)
+        WHERE {
+            ?dept university:hasName ?departmentName .
+            ?student university:belongsTo ?dept .
+            ?student university:hasGPA ?gpa .
+        }
+        GROUP BY ?dept ?departmentName
+    }
+}
+ORDER BY DESC(?avgGPA)
+
+# 19. Get funding distribution by department
+PREFIX university: <http://www.semanticweb.org/university#>
+SELECT ?departmentName ?totalFunding ?projectCount
+WHERE {
+    {
+        SELECT ?dept ?departmentName (SUM(?amount) AS ?totalFunding) (COUNT(DISTINCT ?project) AS ?projectCount)
+        WHERE {
+            ?dept university:hasName ?departmentName .
+            ?professor university:worksIn ?dept .
+            ?professor university:leads ?project .
+            ?project university:fundedBy ?grant .
+            ?grant university:hasAmount ?amount .
+        }
+        GROUP BY ?dept ?departmentName
+    }
+}
+ORDER BY DESC(?totalFunding)
+
+# 20. Find cross-departmental collaborations
+PREFIX university: <http://www.semanticweb.org/university#>
+SELECT ?projectName ?leaderDept ?participantDept
+WHERE {
+    ?project university:hasName ?projectName .
+    ?leader university:leads ?project .
+    ?leader university:worksIn ?leaderDept .
+    ?leaderDept university:hasName ?leaderDeptName .
+    ?student university:participatesIn ?project .
+    ?student university:belongsTo ?participantDept .
+    ?participantDept university:hasName ?participantDeptName .
+    FILTER(?leaderDept != ?participantDept)
+}
+ORDER BY ?projectName

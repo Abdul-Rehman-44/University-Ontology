@@ -1,0 +1,738 @@
+2025-06-21 03:49:21,272 - rdflib.term - WARNING - http://www.example.org/university#['Abdul Rehman'] does not look like a valid URI, trying to serialize this will break.
+2025-06-21 03:49:21,571 - __main__ - INFO - Successfully loaded ontology from university.owl
+2025-06-21 03:49:26,541 - werkzeug - WARNING -  * Debugger is active!
+2025-06-21 03:49:27,056 - werkzeug - INFO -  * Debugger PIN: 355-778-449
+2025-06-21 04:33:20,407 - __main__ - INFO - Successfully loaded ontology from university.owl
+2025-06-21 04:33:20,676 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.112:5000
+2025-06-21 04:33:20,678 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-21 04:33:20,682 - werkzeug - INFO -  * Restarting with stat
+2025-06-21 04:33:23,348 - __main__ - INFO - Successfully loaded ontology from university.owl
+2025-06-21 04:33:23,679 - werkzeug - WARNING -  * Debugger is active!
+2025-06-21 04:33:23,711 - werkzeug - INFO -  * Debugger PIN: 355-778-449
+2025-06-21 04:33:25,945 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:33:25] "GET / HTTP/1.1" 200 -
+2025-06-21 04:33:26,972 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:33:26] "GET /static/style.css HTTP/1.1" 200 -
+2025-06-21 04:33:27,616 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:33:27] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-21 04:33:44,651 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:33:44] "GET / HTTP/1.1" 200 -
+2025-06-21 04:33:44,672 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:33:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-21 04:33:44,833 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:33:44] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-21 04:35:31,561 - __main__ - ERROR - Error executing SPARQL query: Expected end of text, found 'PREFIX'  (at char 43), (line:1, col:44)
+2025-06-21 04:35:31,562 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:35:31] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-21 04:36:05,319 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:36:05] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-21 04:36:07,026 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:36:07] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-21 04:36:07,698 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:36:07] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-21 04:36:07,901 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:36:07] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-21 04:36:08,082 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:36:08] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-21 04:36:08,354 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:36:08] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-21 04:36:54,841 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:36:54] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-21 04:37:28,646 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:37:28] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-21 04:37:31,252 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:37:31] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-21 04:37:32,509 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:37:32] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-21 04:37:32,660 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:37:32] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-21 04:37:32,885 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:37:32] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-21 04:37:47,406 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:37:47] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-21 04:37:47,988 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:37:47] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-21 04:37:48,191 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:37:48] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-21 04:37:48,366 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:37:48] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-21 04:37:48,590 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:37:48] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-21 04:37:48,904 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:37:48] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-21 04:37:49,120 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:37:49] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-21 04:37:49,401 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:37:49] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-21 04:37:49,990 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:37:49] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-21 04:37:50,230 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:37:50] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-21 04:37:50,402 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:37:50] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-21 04:37:50,627 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:37:50] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-21 04:37:51,403 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:37:51] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-21 04:37:51,584 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:37:51] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-21 04:37:51,761 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:37:51] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-21 04:37:51,970 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:37:51] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-21 04:37:52,194 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:37:52] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-21 04:37:52,530 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:37:52] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-21 04:37:52,632 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:37:52] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-21 04:37:52,851 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:37:52] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-21 04:37:53,010 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:37:53] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-21 04:37:55,988 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:37:55] "GET / HTTP/1.1" 200 -
+2025-06-21 04:37:56,006 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:37:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-21 04:37:56,267 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:37:56] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-21 04:38:00,248 - __main__ - ERROR - Error executing SPARQL query: Expected SelectQuery, found 'university'  (at char 19), (line:1, col:20)
+2025-06-21 04:38:00,294 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:38:00] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-21 04:38:32,540 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:38:32] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-21 04:38:46,792 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:38:46] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-21 04:39:04,037 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:39:04] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-21 04:39:21,531 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:39:21] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-21 04:39:45,098 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:39:45] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-21 04:40:08,743 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:40:08] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-21 04:41:44,266 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:41:44] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-21 04:42:02,616 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:42:02] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-21 04:42:41,550 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:42:41] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-21 04:45:00,506 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:45:00] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-21 04:45:50,167 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:45:50] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-21 04:45:52,316 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:45:52] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-21 04:46:06,909 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:46:06] "GET / HTTP/1.1" 200 -
+2025-06-21 04:46:07,103 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:46:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-21 04:46:07,615 - werkzeug - INFO - 127.0.0.1 - - [21/Jun/2025 04:46:07] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-21 04:47:32,370 - werkzeug - INFO -  * Detected change in 'C:\\Users\\User\\Desktop\\KRR 12\\app.py', reloading
+2025-06-21 04:47:33,302 - werkzeug - INFO -  * Restarting with stat
+2025-06-21 04:47:38,292 - __main__ - INFO - Successfully loaded ontology from university.owl
+2025-06-21 04:47:38,758 - werkzeug - WARNING -  * Debugger is active!
+2025-06-21 04:47:38,806 - werkzeug - INFO -  * Debugger PIN: 355-778-449
+2025-06-21 04:47:54,355 - werkzeug - INFO -  * Detected change in 'C:\\Users\\User\\Desktop\\KRR 12\\app.py', reloading
+2025-06-21 04:47:54,775 - werkzeug - INFO -  * Restarting with stat
+2025-06-23 05:11:20,882 - __main__ - INFO - Successfully loaded ontology from university.owl
+2025-06-23 05:11:21,095 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.112:5000
+2025-06-23 05:11:21,098 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-23 05:11:21,106 - werkzeug - INFO -  * Restarting with stat
+2025-06-23 05:11:27,368 - __main__ - INFO - Successfully loaded ontology from university.owl
+2025-06-23 05:11:27,996 - werkzeug - WARNING -  * Debugger is active!
+2025-06-23 05:11:28,031 - werkzeug - INFO -  * Debugger PIN: 145-713-521
+2025-06-23 05:11:28,505 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:11:28] "[33mGET /api/traffic_data HTTP/1.1[0m" 404 -
+2025-06-23 05:11:28,529 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:11:28] "[33mGET /api/traffic_data HTTP/1.1[0m" 404 -
+2025-06-23 05:11:28,763 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:11:28] "GET / HTTP/1.1" 200 -
+2025-06-23 05:11:29,348 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:11:29] "GET /static/style.css HTTP/1.1" 200 -
+2025-06-23 05:11:30,051 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:11:30] "[33mGET /api/traffic_data HTTP/1.1[0m" 404 -
+2025-06-23 05:11:30,287 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:11:30] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-23 05:11:32,078 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:11:32] "[33mGET /api/traffic_data HTTP/1.1[0m" 404 -
+2025-06-23 05:11:34,164 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:11:34] "[33mGET /api/traffic_data HTTP/1.1[0m" 404 -
+2025-06-23 05:11:36,033 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:11:36] "[33mGET /api/traffic_data HTTP/1.1[0m" 404 -
+2025-06-23 05:11:38,062 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:11:38] "[33mGET /api/traffic_data HTTP/1.1[0m" 404 -
+2025-06-23 05:11:40,044 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:11:40] "[33mGET /api/traffic_data HTTP/1.1[0m" 404 -
+2025-06-23 05:11:42,057 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:11:42] "[33mGET /api/traffic_data HTTP/1.1[0m" 404 -
+2025-06-23 05:11:44,081 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:11:44] "[33mGET /api/traffic_data HTTP/1.1[0m" 404 -
+2025-06-23 05:11:46,070 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:11:46] "[33mGET /api/traffic_data HTTP/1.1[0m" 404 -
+2025-06-23 05:11:46,387 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:11:46] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 05:11:48,039 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:11:48] "[33mGET /api/traffic_data HTTP/1.1[0m" 404 -
+2025-06-23 05:11:50,034 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:11:50] "[33mGET /api/traffic_data HTTP/1.1[0m" 404 -
+2025-06-23 05:11:50,902 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:11:50] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 05:11:52,092 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:11:52] "[33mGET /api/traffic_data HTTP/1.1[0m" 404 -
+2025-06-23 05:11:54,039 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:11:54] "[33mGET /api/traffic_data HTTP/1.1[0m" 404 -
+2025-06-23 05:11:54,636 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:11:54] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 05:11:56,106 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:11:56] "[33mGET /api/traffic_data HTTP/1.1[0m" 404 -
+2025-06-23 05:11:58,189 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:11:58] "[33mGET /api/traffic_data HTTP/1.1[0m" 404 -
+2025-06-23 05:12:00,177 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:12:00] "[33mGET /api/traffic_data HTTP/1.1[0m" 404 -
+2025-06-23 05:12:02,038 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:12:02] "[33mGET /api/traffic_data HTTP/1.1[0m" 404 -
+2025-06-23 05:12:04,039 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:12:04] "[33mGET /api/traffic_data HTTP/1.1[0m" 404 -
+2025-06-23 05:12:06,039 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:12:06] "[33mGET /api/traffic_data HTTP/1.1[0m" 404 -
+2025-06-23 05:12:08,044 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:12:08] "[33mGET /api/traffic_data HTTP/1.1[0m" 404 -
+2025-06-23 05:12:10,032 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:12:10] "[33mGET /api/traffic_data HTTP/1.1[0m" 404 -
+2025-06-23 05:12:12,050 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:12:12] "[33mGET /api/traffic_data HTTP/1.1[0m" 404 -
+2025-06-23 05:12:14,039 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:12:14] "[33mGET /api/traffic_data HTTP/1.1[0m" 404 -
+2025-06-23 05:12:16,045 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:12:16] "[33mGET /api/traffic_data HTTP/1.1[0m" 404 -
+2025-06-23 05:12:18,031 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:12:18] "[33mGET /api/traffic_data HTTP/1.1[0m" 404 -
+2025-06-23 05:12:20,150 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:12:20] "[33mGET /api/traffic_data HTTP/1.1[0m" 404 -
+2025-06-23 05:12:22,227 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:12:22] "[33mGET /api/traffic_data HTTP/1.1[0m" 404 -
+2025-06-23 05:12:24,195 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:12:24] "[33mGET /api/traffic_data HTTP/1.1[0m" 404 -
+2025-06-23 05:12:26,045 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:12:26] "[33mGET /api/traffic_data HTTP/1.1[0m" 404 -
+2025-06-23 05:12:28,045 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:12:28] "[33mGET /api/traffic_data HTTP/1.1[0m" 404 -
+2025-06-23 05:13:24,267 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:13:24] "[33mGET /api/traffic_data HTTP/1.1[0m" 404 -
+2025-06-23 05:14:24,134 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:14:24] "[33mGET /api/traffic_data HTTP/1.1[0m" 404 -
+2025-06-23 05:15:24,036 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:15:24] "[33mGET /api/traffic_data HTTP/1.1[0m" 404 -
+2025-06-23 05:17:31,766 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:17:31] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 05:17:51,885 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:17:51] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 05:28:14,065 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:28:14] "GET / HTTP/1.1" 200 -
+2025-06-23 05:28:14,086 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:28:14] "GET /static/style.css HTTP/1.1" 200 -
+2025-06-23 05:28:14,614 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:28:14] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-23 05:28:16,297 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:28:16] "GET / HTTP/1.1" 200 -
+2025-06-23 05:28:16,448 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:28:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-23 05:28:16,933 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:28:16] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-23 05:28:17,892 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:28:17] "GET / HTTP/1.1" 200 -
+2025-06-23 05:28:17,967 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:28:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-23 05:28:18,340 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:28:18] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-23 05:28:33,164 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:28:33] "GET / HTTP/1.1" 200 -
+2025-06-23 05:28:47,219 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:28:47] "GET / HTTP/1.1" 200 -
+2025-06-23 05:29:19,300 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:29:19] "GET / HTTP/1.1" 200 -
+2025-06-23 05:29:34,774 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:29:34] "GET / HTTP/1.1" 200 -
+2025-06-23 05:32:26,934 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:32:26] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 05:32:34,825 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:32:34] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 05:32:44,889 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:32:44] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 05:37:00,798 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:37:00] "GET / HTTP/1.1" 200 -
+2025-06-23 05:37:00,954 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:37:00] "GET /static/style.css HTTP/1.1" 200 -
+2025-06-23 05:37:01,264 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:37:01] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-23 05:45:21,371 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:45:21] "GET / HTTP/1.1" 200 -
+2025-06-23 05:45:21,443 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:45:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-23 05:45:22,202 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:45:22] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-23 05:45:35,487 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:45:35] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 05:45:42,869 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:45:42] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 05:46:14,590 - __main__ - INFO - Successfully loaded ontology from university.owl
+2025-06-23 05:46:14,811 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.112:5000
+2025-06-23 05:46:14,813 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-23 05:46:14,822 - werkzeug - INFO -  * Restarting with stat
+2025-06-23 05:46:20,894 - __main__ - INFO - Successfully loaded ontology from university.owl
+2025-06-23 05:46:21,132 - werkzeug - WARNING -  * Debugger is active!
+2025-06-23 05:46:21,209 - werkzeug - INFO -  * Debugger PIN: 145-713-521
+2025-06-23 05:46:21,560 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:46:21] "GET / HTTP/1.1" 200 -
+2025-06-23 05:46:21,869 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:46:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-23 05:46:23,079 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:46:23] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-23 05:46:35,766 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:46:35] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 05:46:42,427 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:46:42] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 05:46:44,613 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:46:44] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 05:46:50,964 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:46:50] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 05:46:54,255 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:46:54] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 05:47:00,340 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:47:00] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 05:53:04,572 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:53:04] "GET / HTTP/1.1" 200 -
+2025-06-23 05:53:04,604 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:53:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-23 05:53:05,138 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:53:05] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-23 05:54:33,790 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:54:33] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 05:57:49,360 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 05:57:49] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 06:18:05,317 - werkzeug - INFO -  * Detected change in 'C:\\Users\\User\\Desktop\\KRR 12\\app.py', reloading
+2025-06-23 06:18:06,215 - werkzeug - INFO -  * Restarting with stat
+2025-06-23 06:18:13,167 - __main__ - INFO - Successfully loaded ontology from university.owl
+2025-06-23 06:18:13,370 - werkzeug - WARNING -  * Debugger is active!
+2025-06-23 06:18:13,386 - werkzeug - INFO -  * Debugger PIN: 145-713-521
+2025-06-23 06:18:29,163 - werkzeug - INFO -  * Detected change in 'C:\\Users\\User\\Desktop\\KRR 12\\app.py', reloading
+2025-06-23 06:18:29,304 - werkzeug - INFO -  * Restarting with stat
+2025-06-23 06:18:32,743 - __main__ - INFO - Successfully loaded ontology from university.owl
+2025-06-23 06:18:32,855 - werkzeug - WARNING -  * Debugger is active!
+2025-06-23 06:18:32,889 - werkzeug - INFO -  * Debugger PIN: 145-713-521
+2025-06-23 06:18:33,381 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 06:18:33] "GET / HTTP/1.1" 200 -
+2025-06-23 06:18:34,035 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 06:18:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-23 06:18:35,673 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 06:18:35] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-23 06:18:49,803 - __main__ - INFO - Successfully loaded ontology from university.owl
+2025-06-23 06:18:49,910 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.112:5000
+2025-06-23 06:18:49,910 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-23 06:18:49,910 - werkzeug - INFO -  * Restarting with stat
+2025-06-23 06:18:53,382 - __main__ - INFO - Successfully loaded ontology from university.owl
+2025-06-23 06:18:54,320 - werkzeug - WARNING -  * Debugger is active!
+2025-06-23 06:18:54,440 - werkzeug - INFO -  * Debugger PIN: 145-713-521
+2025-06-23 06:18:54,594 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 06:18:54] "GET / HTTP/1.1" 200 -
+2025-06-23 06:18:54,836 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 06:18:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-23 06:18:55,678 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 06:18:55] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-23 06:19:04,442 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 06:19:04] "GET / HTTP/1.1" 200 -
+2025-06-23 06:19:27,114 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 06:19:27] "GET / HTTP/1.1" 200 -
+2025-06-23 06:21:24,748 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 06:21:24] "GET / HTTP/1.1" 200 -
+2025-06-23 06:21:24,776 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 06:21:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-23 06:21:25,265 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 06:21:25] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-23 06:21:53,772 - __main__ - INFO - Successfully loaded ontology from university.owl
+2025-06-23 06:21:53,873 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.112:5000
+2025-06-23 06:21:53,873 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-23 06:21:53,889 - werkzeug - INFO -  * Restarting with stat
+2025-06-23 06:21:56,369 - __main__ - INFO - Successfully loaded ontology from university.owl
+2025-06-23 06:21:56,497 - werkzeug - WARNING -  * Debugger is active!
+2025-06-23 06:21:56,515 - werkzeug - INFO -  * Debugger PIN: 145-713-521
+2025-06-23 06:21:58,285 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 06:21:58] "GET / HTTP/1.1" 200 -
+2025-06-23 06:21:58,689 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 06:21:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-23 06:21:59,928 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 06:21:59] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-23 06:22:06,630 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 06:22:06] "GET / HTTP/1.1" 200 -
+2025-06-23 06:22:19,512 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 06:22:19] "GET /final-report HTTP/1.1" 200 -
+2025-06-23 06:22:40,123 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 06:22:40] "GET /final-report HTTP/1.1" 200 -
+2025-06-23 06:24:47,140 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 06:24:47] "GET / HTTP/1.1" 200 -
+2025-06-23 06:24:47,160 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 06:24:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-23 06:24:47,830 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 06:24:47] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-23 06:27:13,931 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 06:27:13] "GET /final-report HTTP/1.1" 200 -
+2025-06-23 18:55:24,664 - __main__ - INFO - Successfully loaded ontology from university.owl
+2025-06-23 18:55:24,914 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.112:5000
+2025-06-23 18:55:24,916 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-23 18:55:24,924 - werkzeug - INFO -  * Restarting with stat
+2025-06-23 18:55:28,134 - __main__ - INFO - Successfully loaded ontology from university.owl
+2025-06-23 18:55:28,338 - werkzeug - WARNING -  * Debugger is active!
+2025-06-23 18:55:28,351 - werkzeug - INFO -  * Debugger PIN: 114-384-700
+2025-06-23 18:55:31,325 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 18:55:31] "GET / HTTP/1.1" 200 -
+2025-06-23 18:55:32,711 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 18:55:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-23 18:55:34,131 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 18:55:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-23 18:55:35,513 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 18:55:35] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-23 18:55:51,707 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 18:55:51] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 18:58:39,720 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 18:58:39] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 19:08:15,219 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:08:15] "GET / HTTP/1.1" 200 -
+2025-06-23 19:08:15,351 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:08:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-23 19:08:15,846 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:08:15] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-23 19:08:20,766 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:08:20] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 19:08:50,561 - __main__ - ERROR - Error loading ontology: file:///C:/Users/User/Desktop/KRR%2012/university.owl:748:8: unbound prefix
+2025-06-23 19:08:50,570 - __main__ - INFO - Sample ontology created successfully
+2025-06-23 19:08:50,757 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.112:5000
+2025-06-23 19:08:50,759 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-23 19:08:50,764 - werkzeug - INFO -  * Restarting with stat
+2025-06-23 19:08:53,460 - __main__ - ERROR - Error loading ontology: file:///C:/Users/User/Desktop/KRR%2012/university.owl:748:8: unbound prefix
+2025-06-23 19:08:53,465 - __main__ - INFO - Sample ontology created successfully
+2025-06-23 19:08:53,629 - werkzeug - WARNING -  * Debugger is active!
+2025-06-23 19:08:53,666 - werkzeug - INFO -  * Debugger PIN: 114-384-700
+2025-06-23 19:08:56,592 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:08:56] "GET / HTTP/1.1" 200 -
+2025-06-23 19:08:57,216 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:08:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-23 19:08:59,094 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:08:59] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-23 19:09:05,828 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:09:05] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 19:09:22,424 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:09:22] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 19:09:29,465 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:09:29] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 19:09:34,623 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:09:34] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 19:10:52,551 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:10:52] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 19:15:05,450 - __main__ - ERROR - Error loading ontology: file:///C:/Users/User/Desktop/KRR%2012/university.owl:748:8: unbound prefix
+2025-06-23 19:15:05,460 - __main__ - INFO - Sample ontology created successfully
+2025-06-23 19:15:05,684 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.112:5000
+2025-06-23 19:15:05,691 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-23 19:15:05,694 - werkzeug - INFO -  * Restarting with stat
+2025-06-23 19:15:10,803 - __main__ - ERROR - Error loading ontology: file:///C:/Users/User/Desktop/KRR%2012/university.owl:748:8: unbound prefix
+2025-06-23 19:15:10,811 - __main__ - INFO - Sample ontology created successfully
+2025-06-23 19:15:11,043 - werkzeug - WARNING -  * Debugger is active!
+2025-06-23 19:15:11,085 - werkzeug - INFO -  * Debugger PIN: 114-384-700
+2025-06-23 19:15:11,234 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:15:11] "GET / HTTP/1.1" 200 -
+2025-06-23 19:15:11,831 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:15:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-23 19:15:13,693 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:15:13] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-23 19:15:19,340 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:15:19] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 19:15:23,474 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:15:23] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 19:15:35,429 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:15:35] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 19:15:42,199 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:15:42] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 19:17:53,195 - __main__ - INFO - Successfully loaded ontology from university.owl
+2025-06-23 19:17:53,388 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.112:5000
+2025-06-23 19:17:53,390 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-23 19:17:53,396 - werkzeug - INFO -  * Restarting with stat
+2025-06-23 19:17:58,321 - __main__ - INFO - Successfully loaded ontology from university.owl
+2025-06-23 19:17:58,508 - werkzeug - WARNING -  * Debugger is active!
+2025-06-23 19:17:58,535 - werkzeug - INFO -  * Debugger PIN: 114-384-700
+2025-06-23 19:17:58,634 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:17:58] "GET / HTTP/1.1" 200 -
+2025-06-23 19:17:58,915 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:17:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-23 19:17:59,952 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:17:59] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-23 19:18:08,311 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:18:08] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 19:18:14,076 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:18:14] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 19:18:19,597 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:18:19] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 19:29:54,276 - __main__ - INFO - Successfully loaded ontology from university.owl
+2025-06-23 19:29:54,498 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.112:5000
+2025-06-23 19:29:54,500 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-23 19:29:54,508 - werkzeug - INFO -  * Restarting with stat
+2025-06-23 19:29:58,195 - __main__ - INFO - Successfully loaded ontology from university.owl
+2025-06-23 19:29:58,319 - werkzeug - WARNING -  * Debugger is active!
+2025-06-23 19:29:58,335 - werkzeug - INFO -  * Debugger PIN: 114-384-700
+2025-06-23 19:30:00,769 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:30:00] "GET / HTTP/1.1" 200 -
+2025-06-23 19:30:01,902 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:30:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-23 19:30:03,618 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:30:03] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-23 19:30:10,794 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:30:10] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 19:30:23,599 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:30:23] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 19:31:12,726 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:31:12] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 19:31:27,125 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:31:27] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 19:33:35,687 - __main__ - INFO - Successfully loaded ontology from university.owl
+2025-06-23 19:33:35,914 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.112:5000
+2025-06-23 19:33:35,916 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-23 19:33:35,924 - werkzeug - INFO -  * Restarting with stat
+2025-06-23 19:33:39,516 - __main__ - INFO - Successfully loaded ontology from university.owl
+2025-06-23 19:33:39,675 - werkzeug - WARNING -  * Debugger is active!
+2025-06-23 19:33:39,691 - werkzeug - INFO -  * Debugger PIN: 114-384-700
+2025-06-23 19:33:44,969 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:33:44] "GET / HTTP/1.1" 200 -
+2025-06-23 19:33:46,142 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:33:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-23 19:33:48,268 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:33:48] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-23 19:34:10,447 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:34:10] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 19:41:39,358 - __main__ - INFO - Successfully loaded ontology from university.owl
+2025-06-23 19:41:39,562 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.112:5000
+2025-06-23 19:41:39,565 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-23 19:41:39,573 - werkzeug - INFO -  * Restarting with stat
+2025-06-23 19:41:43,630 - __main__ - INFO - Successfully loaded ontology from university.owl
+2025-06-23 19:41:43,923 - werkzeug - WARNING -  * Debugger is active!
+2025-06-23 19:41:43,944 - werkzeug - INFO -  * Debugger PIN: 114-384-700
+2025-06-23 19:41:44,224 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:41:44] "GET / HTTP/1.1" 200 -
+2025-06-23 19:41:44,609 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:41:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-23 19:41:46,519 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:41:46] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-23 19:41:56,541 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:41:56] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 19:42:08,575 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:42:08] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 19:42:14,864 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:42:14] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 19:42:18,786 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:42:18] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 19:43:49,950 - __main__ - INFO - Successfully loaded ontology from university.owl
+2025-06-23 19:43:50,241 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.112:5000
+2025-06-23 19:43:50,245 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-23 19:43:50,256 - werkzeug - INFO -  * Restarting with stat
+2025-06-23 19:43:54,336 - __main__ - INFO - Successfully loaded ontology from university.owl
+2025-06-23 19:43:55,392 - werkzeug - WARNING -  * Debugger is active!
+2025-06-23 19:43:55,628 - werkzeug - INFO -  * Debugger PIN: 114-384-700
+2025-06-23 19:43:55,894 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:43:55] "GET / HTTP/1.1" 200 -
+2025-06-23 19:43:56,370 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:43:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-23 19:43:57,854 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:43:57] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-23 19:44:08,586 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:44:08] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 19:45:44,618 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:45:44] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 19:45:52,311 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:45:52] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 19:45:58,555 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:45:58] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 19:46:00,204 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:46:00] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 19:46:04,419 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:46:04] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 19:46:18,001 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:46:18] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 19:46:31,125 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:46:31] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 19:47:41,924 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:47:41] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 19:54:21,417 - __main__ - INFO - Successfully loaded ontology from university.owl
+2025-06-23 19:54:21,592 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.112:5000
+2025-06-23 19:54:21,593 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-23 19:54:21,597 - werkzeug - INFO -  * Restarting with stat
+2025-06-23 19:54:24,761 - __main__ - INFO - Successfully loaded ontology from university.owl
+2025-06-23 19:54:24,889 - werkzeug - WARNING -  * Debugger is active!
+2025-06-23 19:54:24,913 - werkzeug - INFO -  * Debugger PIN: 114-384-700
+2025-06-23 19:54:27,077 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:54:27] "GET / HTTP/1.1" 200 -
+2025-06-23 19:54:28,385 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:54:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-23 19:54:31,153 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:54:31] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-23 19:54:42,664 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:54:42] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 19:54:50,575 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:54:50] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 19:54:54,842 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:54:54] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 19:57:14,870 - __main__ - ERROR - Error executing SPARQL query: Expected {SelectQuery | ConstructQuery | DescribeQuery | AskQuery}, found '<'  (at char 0), (line:1, col:1)
+2025-06-23 19:57:14,875 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:57:14] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 19:57:17,802 - __main__ - ERROR - Error executing SPARQL query: Expected {SelectQuery | ConstructQuery | DescribeQuery | AskQuery}, found '<'  (at char 0), (line:1, col:1)
+2025-06-23 19:57:17,803 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 19:57:17] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 20:03:21,848 - __main__ - INFO - Successfully loaded ontology from university.owl
+2025-06-23 20:03:22,032 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.112:5000
+2025-06-23 20:03:22,033 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-23 20:03:22,038 - werkzeug - INFO -  * Restarting with stat
+2025-06-23 20:03:28,969 - __main__ - INFO - Successfully loaded ontology from university.owl
+2025-06-23 20:03:29,199 - werkzeug - WARNING -  * Debugger is active!
+2025-06-23 20:03:29,223 - werkzeug - INFO -  * Debugger PIN: 114-384-700
+2025-06-23 20:03:29,374 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 20:03:29] "GET / HTTP/1.1" 200 -
+2025-06-23 20:03:29,668 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 20:03:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-23 20:03:31,514 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 20:03:31] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-23 20:03:39,377 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 20:03:39] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 20:03:49,250 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 20:03:49] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 20:07:13,346 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 20:07:13] "GET / HTTP/1.1" 200 -
+2025-06-23 20:07:14,196 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 20:07:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-23 20:07:15,701 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 20:07:15] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-23 20:07:15,811 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 20:07:15] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-23 20:09:58,773 - __main__ - INFO - Successfully loaded ontology from university.owl
+2025-06-23 20:09:59,077 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.112:5000
+2025-06-23 20:09:59,079 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-23 20:09:59,083 - werkzeug - INFO -  * Restarting with stat
+2025-06-23 20:10:02,434 - __main__ - INFO - Successfully loaded ontology from university.owl
+2025-06-23 20:10:02,566 - werkzeug - WARNING -  * Debugger is active!
+2025-06-23 20:10:02,581 - werkzeug - INFO -  * Debugger PIN: 114-384-700
+2025-06-23 20:10:04,670 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 20:10:04] "GET / HTTP/1.1" 200 -
+2025-06-23 20:10:06,262 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 20:10:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-23 20:10:08,907 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 20:10:08] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-23 20:10:16,589 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 20:10:16] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 20:11:11,443 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 20:11:11] "GET /final-report HTTP/1.1" 200 -
+2025-06-23 20:12:49,826 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 20:12:49] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 20:13:28,454 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 20:13:28] "GET /final-report HTTP/1.1" 200 -
+2025-06-23 20:21:53,242 - __main__ - INFO - Successfully loaded ontology from university.owl
+2025-06-23 20:21:53,503 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.112:5000
+2025-06-23 20:21:53,504 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-23 20:21:53,517 - werkzeug - INFO -  * Restarting with stat
+2025-06-23 20:22:03,153 - __main__ - INFO - Successfully loaded ontology from university.owl
+2025-06-23 20:22:03,437 - werkzeug - WARNING -  * Debugger is active!
+2025-06-23 20:22:03,463 - werkzeug - INFO -  * Debugger PIN: 114-384-700
+2025-06-23 20:22:03,659 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 20:22:03] "GET / HTTP/1.1" 200 -
+2025-06-23 20:22:04,232 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 20:22:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-23 20:22:06,712 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 20:22:06] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-23 20:22:38,982 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 20:22:38] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 20:26:15,205 - __main__ - INFO - Successfully loaded ontology from university.owl
+2025-06-23 20:26:15,455 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.112:5000
+2025-06-23 20:26:15,457 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-23 20:26:15,464 - werkzeug - INFO -  * Restarting with stat
+2025-06-23 20:26:21,937 - __main__ - INFO - Successfully loaded ontology from university.owl
+2025-06-23 20:26:22,142 - werkzeug - WARNING -  * Debugger is active!
+2025-06-23 20:26:22,160 - werkzeug - INFO -  * Debugger PIN: 114-384-700
+2025-06-23 20:26:22,295 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 20:26:22] "GET / HTTP/1.1" 200 -
+2025-06-23 20:26:22,608 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 20:26:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-23 20:26:24,325 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 20:26:24] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-23 20:26:34,648 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 20:26:34] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 20:27:00,065 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 20:27:00] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 20:27:05,766 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 20:27:05] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 20:28:38,202 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 20:28:38] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-23 20:30:03,532 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 20:30:03] "GET /final-report HTTP/1.1" 200 -
+2025-06-24 12:51:08,568 - __main__ - INFO - Successfully loaded ontology from university.owl
+2025-06-24 12:51:08,706 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.8.131.88:5000
+2025-06-24 12:51:08,706 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-24 12:51:08,712 - werkzeug - INFO -  * Restarting with stat
+2025-06-24 12:51:13,131 - __main__ - INFO - Successfully loaded ontology from university.owl
+2025-06-24 12:51:13,303 - werkzeug - WARNING -  * Debugger is active!
+2025-06-24 12:51:13,367 - werkzeug - INFO -  * Debugger PIN: 126-928-404
+2025-06-24 12:51:13,798 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 12:51:13] "GET / HTTP/1.1" 200 -
+2025-06-24 12:51:14,123 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 12:51:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-24 12:51:15,794 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 12:51:15] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-24 12:51:34,735 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 12:51:34] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-24 12:52:02,057 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 12:52:02] "GET /final-report HTTP/1.1" 200 -
+2025-06-24 23:01:43,530 - __main__ - INFO - Successfully loaded ontology from university.owl
+2025-06-24 23:01:43,817 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.112:5000
+2025-06-24 23:01:43,817 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-24 23:01:43,825 - werkzeug - INFO -  * Restarting with stat
+2025-06-24 23:01:47,125 - __main__ - INFO - Successfully loaded ontology from university.owl
+2025-06-24 23:01:47,269 - werkzeug - WARNING -  * Debugger is active!
+2025-06-24 23:01:47,348 - werkzeug - INFO -  * Debugger PIN: 121-488-997
+2025-06-24 23:02:49,317 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:02:49] "GET / HTTP/1.1" 200 -
+2025-06-24 23:02:50,757 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:02:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-24 23:02:51,607 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:02:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-24 23:02:52,360 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:02:52] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-24 23:07:46,809 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:07:46] "GET / HTTP/1.1" 200 -
+2025-06-24 23:07:46,920 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:07:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-24 23:07:47,591 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:07:47] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-24 23:09:03,023 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:09:03] "GET / HTTP/1.1" 200 -
+2025-06-24 23:09:03,090 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:09:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-24 23:09:04,574 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:09:04] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-24 23:09:33,371 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:09:33] "GET /final-report HTTP/1.1" 200 -
+2025-06-24 23:13:36,453 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:13:36] "GET / HTTP/1.1" 200 -
+2025-06-24 23:13:36,567 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:13:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-24 23:13:37,468 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:13:37] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-24 23:13:44,995 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:13:44] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-24 23:13:49,027 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:13:49] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-24 23:13:52,481 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:13:52] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-24 23:13:56,625 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:13:56] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-24 23:16:56,565 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:16:56] "GET / HTTP/1.1" 200 -
+2025-06-24 23:16:56,654 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:16:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-24 23:16:59,359 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:16:59] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-24 23:17:02,108 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:17:02] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-24 23:17:06,286 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:17:06] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-24 23:17:13,135 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:17:13] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-24 23:17:17,715 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:17:17] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-24 23:17:25,583 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:17:25] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-24 23:17:32,564 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:17:32] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-24 23:17:39,989 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:17:39] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-24 23:17:49,024 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:17:49] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-24 23:18:01,648 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:18:01] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-24 23:18:06,919 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:18:06] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-24 23:18:12,816 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:18:12] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-24 23:18:14,395 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:18:14] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-24 23:18:18,046 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:18:18] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-24 23:18:29,564 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:18:29] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-24 23:20:44,088 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:20:44] "GET / HTTP/1.1" 200 -
+2025-06-24 23:20:44,110 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:20:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-24 23:20:44,624 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:20:44] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-24 23:20:49,943 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:20:49] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-24 23:20:55,917 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:20:55] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-24 23:21:01,136 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:21:01] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-24 23:24:21,810 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:24:21] "GET / HTTP/1.1" 200 -
+2025-06-24 23:24:21,837 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:24:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-24 23:24:22,536 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:24:22] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-24 23:24:26,797 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:24:26] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-24 23:24:31,851 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:24:31] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-24 23:24:38,417 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:24:38] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-24 23:24:42,406 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:24:42] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-24 23:24:50,275 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:24:50] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-24 23:24:51,665 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:24:51] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-24 23:24:55,627 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:24:55] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-24 23:26:30,339 - __main__ - INFO - Successfully loaded ontology from university.owl
+2025-06-24 23:26:30,578 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.112:5000
+2025-06-24 23:26:30,581 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-24 23:26:30,591 - werkzeug - INFO -  * Restarting with stat
+2025-06-24 23:26:36,433 - __main__ - INFO - Successfully loaded ontology from university.owl
+2025-06-24 23:26:36,589 - werkzeug - WARNING -  * Debugger is active!
+2025-06-24 23:26:36,698 - werkzeug - INFO -  * Debugger PIN: 121-488-997
+2025-06-24 23:26:36,861 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:26:36] "GET / HTTP/1.1" 200 -
+2025-06-24 23:26:37,293 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:26:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-24 23:26:38,655 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:26:38] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-24 23:27:58,766 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:27:58] "GET / HTTP/1.1" 200 -
+2025-06-24 23:27:58,786 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:27:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-24 23:27:59,524 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:27:59] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-24 23:28:04,483 - __main__ - ERROR - Error executing SPARQL query: Expected {SelectQuery | ConstructQuery | DescribeQuery | AskQuery}  (at char 0), (line:1, col:1)
+2025-06-24 23:28:04,485 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:28:04] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-24 23:28:55,582 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:28:55] "GET / HTTP/1.1" 200 -
+2025-06-24 23:28:56,516 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:28:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-24 23:28:57,612 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:28:57] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-24 23:29:00,791 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:29:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-24 23:31:01,697 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:31:01] "GET / HTTP/1.1" 200 -
+2025-06-24 23:31:01,753 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:31:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-24 23:31:02,212 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:31:02] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-24 23:31:05,249 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:31:05] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-24 23:31:10,835 - werkzeug - INFO - 127.0.0.1 - - [24/Jun/2025 23:31:10] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-25 00:02:22,366 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:02:22] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-25 00:02:28,344 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:02:28] "GET /final-report HTTP/1.1" 200 -
+2025-06-25 00:05:36,020 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:05:36] "GET / HTTP/1.1" 200 -
+2025-06-25 00:05:36,041 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:05:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-25 00:05:37,804 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:05:37] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-25 00:05:44,139 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:05:44] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-25 00:13:43,170 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:13:43] "GET / HTTP/1.1" 200 -
+2025-06-25 00:13:43,200 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:13:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-25 00:13:43,922 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:13:43] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-25 00:13:49,257 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:13:49] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-25 00:13:52,826 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:13:52] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-25 00:13:56,239 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:13:56] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-25 00:13:59,557 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:13:59] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-25 00:14:05,079 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:14:05] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-25 00:14:17,657 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:14:17] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-25 00:15:33,994 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:15:33] "GET / HTTP/1.1" 200 -
+2025-06-25 00:15:34,022 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:15:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-25 00:15:34,549 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:15:34] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-25 00:15:45,711 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:15:45] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-25 00:15:52,701 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:15:52] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-25 00:15:56,702 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:15:56] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-25 00:16:50,849 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:16:50] "GET / HTTP/1.1" 200 -
+2025-06-25 00:16:50,907 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:16:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-25 00:16:51,494 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:16:51] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-25 00:16:58,367 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:16:58] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-25 00:17:02,437 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:17:02] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-25 00:18:53,768 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:18:53] "GET / HTTP/1.1" 200 -
+2025-06-25 00:18:53,789 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:18:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-25 00:18:54,382 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:18:54] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-25 00:19:04,896 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:19:04] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-25 00:19:09,160 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:19:09] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-25 00:19:15,524 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:19:15] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-25 00:19:20,811 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:19:20] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-25 00:20:10,358 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:20:10] "GET / HTTP/1.1" 200 -
+2025-06-25 00:20:10,396 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:20:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-25 00:20:10,813 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:20:10] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-25 00:20:17,491 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:20:17] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-25 00:27:08,061 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:27:08] "GET / HTTP/1.1" 200 -
+2025-06-25 00:27:08,088 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:27:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-25 00:27:09,638 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:27:09] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-25 00:28:12,465 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:28:12] "GET / HTTP/1.1" 200 -
+2025-06-25 00:28:12,483 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:28:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-25 00:28:13,777 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:28:13] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-25 00:30:17,492 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:30:17] "GET / HTTP/1.1" 200 -
+2025-06-25 00:30:17,533 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:30:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-25 00:30:18,219 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:30:18] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-25 00:31:40,707 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:31:40] "GET / HTTP/1.1" 200 -
+2025-06-25 00:31:40,739 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:31:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-25 00:31:42,037 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:31:42] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-25 00:33:13,601 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:33:13] "GET / HTTP/1.1" 200 -
+2025-06-25 00:33:13,628 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:33:13] "GET /static/style.css HTTP/1.1" 200 -
+2025-06-25 00:33:15,248 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:33:15] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-25 00:33:28,640 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:33:28] "GET / HTTP/1.1" 200 -
+2025-06-25 00:33:28,670 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:33:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-25 00:33:29,946 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:33:29] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-25 00:33:43,640 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:33:43] "GET / HTTP/1.1" 200 -
+2025-06-25 00:33:43,815 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:33:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-25 00:33:44,965 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:33:44] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-25 00:34:38,154 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:34:38] "GET / HTTP/1.1" 200 -
+2025-06-25 00:34:38,201 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:34:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-25 00:34:38,877 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:34:38] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-25 00:36:01,305 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:36:01] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-25 00:40:15,211 - __main__ - INFO - Successfully loaded ontology from university.owl
+2025-06-25 00:40:15,478 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.112:5000
+2025-06-25 00:40:15,480 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-25 00:40:15,490 - werkzeug - INFO -  * Restarting with stat
+2025-06-25 00:40:19,964 - __main__ - INFO - Successfully loaded ontology from university.owl
+2025-06-25 00:40:20,079 - werkzeug - WARNING -  * Debugger is active!
+2025-06-25 00:40:20,153 - werkzeug - INFO -  * Debugger PIN: 121-488-997
+2025-06-25 00:40:20,253 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:40:20] "GET / HTTP/1.1" 200 -
+2025-06-25 00:40:20,591 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:40:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-25 00:40:21,679 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:40:21] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-25 00:40:24,291 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:40:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-25 00:41:52,304 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:41:52] "GET / HTTP/1.1" 200 -
+2025-06-25 00:41:52,328 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:41:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-25 00:41:53,333 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:41:53] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-25 00:42:44,870 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:42:44] "GET / HTTP/1.1" 200 -
+2025-06-25 00:42:45,958 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:42:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-25 00:42:47,712 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:42:47] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-25 00:42:51,297 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:42:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-25 00:43:09,853 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:43:09] "GET /final-report HTTP/1.1" 200 -
+2025-06-25 00:43:22,794 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 00:43:22] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-25 01:05:40,957 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 01:05:40] "GET / HTTP/1.1" 200 -
+2025-06-25 01:05:41,653 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 01:05:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-25 01:05:42,666 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 01:05:42] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-25 01:05:58,040 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 01:05:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-25 01:05:58,282 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 01:05:58] "GET /final-report HTTP/1.1" 200 -
+2025-06-25 01:06:50,807 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 01:06:50] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-25 01:06:58,729 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 01:06:58] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-25 01:13:01,037 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 01:13:01] "GET / HTTP/1.1" 200 -
+2025-06-25 01:13:01,458 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 01:13:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-25 01:13:02,544 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 01:13:02] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-25 01:13:07,764 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 01:13:07] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-25 20:31:28,997 - __main__ - INFO - Successfully loaded ontology from university.owl
+2025-06-25 20:31:29,591 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.112:5000
+2025-06-25 20:31:29,614 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-25 20:31:29,820 - werkzeug - INFO -  * Restarting with stat
+2025-06-25 20:31:51,893 - __main__ - INFO - Successfully loaded ontology from university.owl
+2025-06-25 20:31:54,716 - werkzeug - WARNING -  * Debugger is active!
+2025-06-25 20:31:55,589 - werkzeug - INFO -  * Debugger PIN: 279-384-890
+2025-06-25 20:32:23,543 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 20:32:23] "GET / HTTP/1.1" 200 -
+2025-06-25 20:32:24,642 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 20:32:24] "GET / HTTP/1.1" 200 -
+2025-06-25 20:32:42,781 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 20:32:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-25 20:32:44,155 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 20:32:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-25 20:32:48,919 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 20:32:48] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-25 20:32:49,454 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 20:32:49] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-25 20:32:58,894 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 20:32:58] "GET / HTTP/1.1" 200 -
+2025-06-25 20:33:00,101 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 20:33:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-25 20:33:00,385 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 20:33:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-25 20:33:19,670 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 20:33:19] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-25 20:34:44,953 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 20:34:44] "GET / HTTP/1.1" 200 -
+2025-06-25 20:34:45,192 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 20:34:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-25 20:34:48,772 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 20:34:48] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-25 20:35:50,731 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 20:35:50] "GET /final-report HTTP/1.1" 200 -
+2025-06-25 20:42:28,494 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 20:42:28] "GET /final-report HTTP/1.1" 200 -
+2025-06-25 20:43:37,429 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 20:43:37] "GET / HTTP/1.1" 200 -
+2025-06-25 20:43:37,755 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 20:43:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-25 20:43:39,559 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 20:43:39] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-25 20:44:25,304 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 20:44:25] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-25 20:49:27,767 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 20:49:27] "GET / HTTP/1.1" 200 -
+2025-06-25 20:49:28,537 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 20:49:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-25 20:49:30,886 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 20:49:30] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-25 20:49:34,781 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 20:49:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-25 20:58:17,752 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 20:58:17] "GET / HTTP/1.1" 200 -
+2025-06-25 20:58:18,519 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 20:58:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-25 20:58:20,546 - werkzeug - INFO - 127.0.0.1 - - [25/Jun/2025 20:58:20] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-26 11:56:56,361 - __main__ - INFO - Successfully loaded ontology from university.owl
+2025-06-26 11:56:56,731 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.8.141.255:5000
+2025-06-26 11:56:56,735 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-26 11:56:56,757 - werkzeug - INFO -  * Restarting with stat
+2025-06-26 11:57:08,124 - __main__ - INFO - Successfully loaded ontology from university.owl
+2025-06-26 11:57:08,479 - werkzeug - WARNING -  * Debugger is active!
+2025-06-26 11:57:08,539 - werkzeug - INFO -  * Debugger PIN: 851-810-792
+2025-06-26 11:57:09,137 - werkzeug - INFO - 127.0.0.1 - - [26/Jun/2025 11:57:09] "GET / HTTP/1.1" 200 -
+2025-06-26 11:57:09,850 - werkzeug - INFO - 127.0.0.1 - - [26/Jun/2025 11:57:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-26 11:57:12,463 - werkzeug - INFO - 127.0.0.1 - - [26/Jun/2025 11:57:12] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-26 11:57:25,351 - werkzeug - INFO - 127.0.0.1 - - [26/Jun/2025 11:57:25] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-26 11:57:31,081 - werkzeug - INFO - 127.0.0.1 - - [26/Jun/2025 11:57:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-26 12:24:27,043 - werkzeug - INFO - 127.0.0.1 - - [26/Jun/2025 12:24:27] "GET / HTTP/1.1" 200 -
+2025-06-26 12:24:27,125 - werkzeug - INFO - 127.0.0.1 - - [26/Jun/2025 12:24:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-26 12:24:28,078 - werkzeug - INFO - 127.0.0.1 - - [26/Jun/2025 12:24:28] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-26 12:27:07,751 - werkzeug - INFO - 127.0.0.1 - - [26/Jun/2025 12:27:07] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-26 13:06:52,658 - werkzeug - INFO - 127.0.0.1 - - [26/Jun/2025 13:06:52] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-26 13:07:10,246 - werkzeug - INFO - 127.0.0.1 - - [26/Jun/2025 13:07:10] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-26 13:07:16,433 - werkzeug - INFO - 127.0.0.1 - - [26/Jun/2025 13:07:16] "POST /api/ontology/query HTTP/1.1" 200 -
+2025-06-28 00:02:24,083 - __main__ - INFO - Successfully loaded ontology from university.owl
+2025-06-28 00:02:24,959 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.112:5000
+2025-06-28 00:02:25,093 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-28 00:02:25,192 - werkzeug - INFO -  * Restarting with stat
+2025-06-28 00:02:41,186 - __main__ - INFO - Successfully loaded ontology from university.owl
+2025-06-28 00:02:41,479 - werkzeug - WARNING -  * Debugger is active!
+2025-06-28 00:02:41,580 - werkzeug - INFO -  * Debugger PIN: 115-235-393
+2025-06-28 00:02:42,626 - werkzeug - INFO - 127.0.0.1 - - [28/Jun/2025 00:02:42] "GET / HTTP/1.1" 200 -
+2025-06-28 00:02:45,240 - werkzeug - INFO - 127.0.0.1 - - [28/Jun/2025 00:02:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-28 00:02:49,215 - werkzeug - INFO - 127.0.0.1 - - [28/Jun/2025 00:02:49] "GET /api/ontology/stats HTTP/1.1" 200 -
+2025-06-28 00:03:03,073 - werkzeug - INFO - 127.0.0.1 - - [28/Jun/2025 00:03:03] "POST /api/ontology/query HTTP/1.1" 200 -
